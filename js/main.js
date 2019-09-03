@@ -33,7 +33,6 @@ function toggleMenu() {
 }
 
 $(document).ready(function () {
-
 /* SCROLLDOWN FUNCTION */
   $('.scrollbar').click(function() {
       $([document.documentElement, document.body]).animate({
