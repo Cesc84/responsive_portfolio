@@ -28,6 +28,7 @@
         <!-- <div class="menu-branding">
           <div class="portrait"></div>
         </div> -->
+
         <ul class="menu-nav">
           <li class="nav-item"><a href="#home" class="nav-link">First</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">Second</a></li>
@@ -118,9 +119,17 @@
   </div>
 
   <script src="js/main.js"></script>
-  <script src="js/aos.min.js" type="text/javascript"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    $(document).ready(function() {
+
+      /* SCROLLDOWN FUNCTION */
+      $('.scrollbar').click(function() {
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $('#about').offset().top
+        }, 400);
+      });
+    });
     AOS.init();
   </script>
 </body>

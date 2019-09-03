@@ -61,7 +61,7 @@ header {
 section, footer {
   position: relative;
   width: 100%;
-  &.orange { background: $secondary-color; }
+  &.orange { background: $primary-color; }
   &.white { background: $white; }
   &.blue { background: $primary-color; }
   height: 600px;

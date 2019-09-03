@@ -25,15 +25,16 @@ p {
 
 a {
   text-decoration: none;
-  color: #ff704d;
+  color: #cccc00;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out; }
   a:hover {
-    color: #ff9980; }
+    color: yellow; }
 
 .menu-btn {
+  opacity: 0;
   position: absolute;
   z-index: 99;
   right: 35px;
@@ -108,7 +109,7 @@ a {
           width: 7px;
           height: 7px;
           border-radius: 50%;
-          background: #ff9980;
+          background: yellow;
           opacity: 0; }
         .menu ul li .nav-link:hover:after {
           -webkit-transition: all 300ms ease-in-out;
@@ -129,6 +130,8 @@ a {
     font-size: .9rem; }
   section .row {
     padding: 40px 30px; }
+  .menu-btn {
+    opacity: 1; }
   .menu {
     right: 0;
     height: 600px;
@@ -167,15 +170,21 @@ a {
   h1 {
     font-size: 1.8rem; }
   h2 {
-    font-size: 1.2rem; }
+    font-size: 1.1rem; }
+  h5 {
+    font-size: .7rem; }
   p {
     font-size: .8rem; }
+  .scrollbar {
+    right: -5px !important; }
   .container .headings {
     top: 42% !important; }
   .container .highlight {
     font-size: 3rem; }
   .container .content {
     width: 100%; }
+  #hero .icons {
+    left: 23px !important; }
   .orange .large-6 {
     height: auto; }
     .orange .large-6 .content {
@@ -219,7 +228,7 @@ a {
 #grid {
   height: auto; }
   #grid a:hover {
-    color: #ff704d; }
+    color: #cccc00; }
   #grid .thumb {
     display: block;
     position: relative;
@@ -269,7 +278,7 @@ form {
   display: block;
   width: 100%;
   height: auto;
-  background: #ff704d;
+  background: #cccc00;
   color: #FFFFFF;
   font-size: 1rem;
   text-align: left;
@@ -281,7 +290,7 @@ form {
     width: 100%;
     height: 30px;
     display: block;
-    background: #ff704d;
+    background: #cccc00;
     border: none;
     border-bottom: 1px solid #FFFFFF;
     margin-bottom: 15px; }
@@ -358,11 +367,11 @@ section, footer {
   width: 100%;
   height: 600px; }
   section.orange, footer.orange {
-    background: #ff704d; }
+    background: #009999; }
   section.white, footer.white {
     background: #FFFFFF; }
   section.blue, footer.blue {
-    background: #0EB3FA; }
+    background: #009999; }
 
 .row {
   display: block;
@@ -405,7 +414,7 @@ section, footer {
 .highlight {
   display: block;
   font-size: 4rem;
-  color: #ff704d;
+  color: #cccc00;
   font-weight: 700; }
 
 /*
@@ -418,7 +427,7 @@ section, footer {
   z-index: 1051;
   font-weight: 300;
   font-size: .7rem;
-  color: #ff704d;
+  color: #cccc00;
   transform: rotate(90deg);
   cursor: pointer;
   padding: 0; }
@@ -427,7 +436,7 @@ section, footer {
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
-    background: #ff9980; }
+    background: yellow; }
   .scrollbar::after {
     content: '';
     position: absolute;
@@ -435,7 +444,7 @@ section, footer {
     left: 100%;
     width: 70px;
     height: 2px;
-    background: #ff704d; }
+    background: #cccc00; }
 
 /*
  ++++++ Hero Section ++++++
@@ -481,7 +490,7 @@ section, footer {
     font-size: 1.5rem;
     margin-bottom: 5px; }
     .icons a:hover {
-      color: #ff9980; }
+      color: yellow; }
 
 /*
  ++++++ Orange Section ++++++
@@ -546,4 +555,4 @@ footer {
         text-decoration: underline; }
         footer.white .copyright #terms:hover {
           background: #FFFFFF;
-          color: #ff9980; }
+          color: yellow; }
