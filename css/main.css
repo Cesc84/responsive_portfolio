@@ -173,8 +173,10 @@ a {
   p {
     font-size: .8rem; }
   .scrollbar {
-    top: 450px !important;
+    top: 525px !important;
     right: -5px !important; }
+    .scrollbar::before {
+      width: 220px !important; }
   .container .headings {
     top: 42% !important; }
   .container .highlight {
@@ -184,12 +186,14 @@ a {
   #hero {
     height: 600px !important; }
     #hero .icons {
-      left: 23px !important; }
+      left: 25px !important; }
   .bio .large-6 {
     height: auto; }
     .bio .large-6 .content {
       padding: 0;
       padding-top: 2rem; }
+  .portrait:after {
+    display: none; }
   .portrait img {
     padding-bottom: 0; }
   #grid .thumb {
@@ -205,9 +209,9 @@ a {
     top: -3.5rem !important;
     left: 6%; }
     .white .icons a {
-      display: inline-block;
+      display: inline-block !important;
       font-size: 1.5rem !important;
-      padding: 80px 10px 7px 10px; }
+      padding: 100px 10px 7px 10px; }
   .wrapper {
     width: 100% !important; }
     .wrapper .button {
