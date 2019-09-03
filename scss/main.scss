@@ -17,7 +17,10 @@ body {
   font-family: $font-family;
   line-height: 1.5;
   letter-spacing: 1.8px;
+  max-width: 1280px;
+  margin: 0 auto;
   .container {
+    position: relative;
     width: 100%;
     margin: 0 auto;
   }
@@ -61,7 +64,7 @@ header {
 section, footer {
   position: relative;
   width: 100%;
-  &.orange { background: $primary-color; }
+  &.bio { background: $primary-color; }
   &.white { background: $white; }
   &.blue { background: $primary-color; }
   height: 600px;
@@ -197,21 +200,25 @@ section, footer {
     font-size: 1.5rem;
     margin-bottom: 5px;
     &:hover {
-      color: lighten($secondary-color, 10);
+      color: lighten($secondary-color, 5);
     }
   }
 }
 
 /*
- ++++++ Orange Section ++++++
+ ++++++ Bio Section ++++++
 */
-.orange {
+.bio {
   height: auto;
   .portrait {
     img {
       width: auto;
       height: 480px;
     }
+  }
+  .content {
+    text-align: center;
+    padding-top: 90px;
   }
 }
 
@@ -253,13 +260,15 @@ footer {
       padding-bottom: 1.5rem;
     }
     .wrapper {
+      top: 45%;
       width: 500px;
     }
     .icons {
-      top: 41%;
+      top: 36%;
       right: 30px;
       a {
         font-size: 1.8rem;
+        // @include easeInOut;
       }
     }
   	.copyright {
@@ -273,7 +282,7 @@ footer {
   			text-decoration: underline;
   			&:hover {
   				background: $white;
-  				color: lighten($secondary-color, 10);
+  				color: lighten($secondary-color, 5);
         }
       }
     }
