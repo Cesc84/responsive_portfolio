@@ -196,12 +196,12 @@ a {
   .white h2 {
     padding-bottom: 2rem !important; }
   .white .icons {
-    top: -3.5rem !important;
+    top: -3rem !important;
     left: 6%; }
     .white .icons a {
       display: inline-block;
       font-size: 1.5rem !important;
-      padding: 80px 10px 7px 10px; }
+      padding: 90px 10px 7px 10px; }
   .wrapper {
     width: 100% !important; }
     .wrapper .button {
