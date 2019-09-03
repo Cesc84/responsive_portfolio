@@ -138,6 +138,10 @@
       float: none!important;
       width: 100%!important;
       margin: 20px 0 0 0!important;
+      .thumb-info {
+        background: rgba($grey, 0.7)!important;
+        opacity: 1!important;
+      }
     }
   }
 
