@@ -196,12 +196,12 @@ a {
   .white h2 {
     padding-bottom: 2rem !important; }
   .white .icons {
-    top: -3rem !important;
+    top: -3.5rem !important;
     left: 6%; }
     .white .icons a {
       display: inline-block;
       font-size: 1.5rem !important;
-      padding: 90px 10px 7px 10px; }
+      padding: 80px 10px 7px 10px; }
   .wrapper {
     width: 100% !important; }
     .wrapper .button {
@@ -225,14 +225,13 @@ a {
 #grid {
   background: #ffffe6;
   height: auto; }
-  #grid a:hover {
-    color: #cccc00; }
   #grid .thumb {
     display: block;
     position: relative;
     float: left;
     width: calc(100% / 3 - 20px);
     margin: 20px 10px 0 10px;
+    border-bottom: 3px solid #cccc00;
     color: #FFFFFF; }
     #grid .thumb .thumb-image {
       width: 100%;
