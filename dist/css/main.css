@@ -34,7 +34,6 @@ a {
     color: yellow; }
 
 .menu-btn {
-  opacity: 0;
   position: absolute;
   z-index: 99;
   right: 35px;
@@ -130,8 +129,6 @@ a {
     font-size: .9rem; }
   section .row {
     padding: 40px 30px; }
-  .menu-btn {
-    opacity: 1; }
   .menu {
     right: 0;
     height: 600px;
