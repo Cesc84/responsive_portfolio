@@ -99,8 +99,10 @@
   }
 
   .scrollbar  {
+    top: 450px!important;
     right: -5px!important;
   }
+  
   .container {
     .headings {
       top: 42%!important;
@@ -112,7 +114,9 @@
       width: 100%;
     }
   }
+
   #hero {
+    height: 600px!important;
     .icons {
       left: 23px!important;
     }

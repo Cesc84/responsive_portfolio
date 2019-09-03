@@ -34,7 +34,7 @@ p {
 
 a {
   text-decoration: none;
-  color: $secondary-color;
+  color: $white;
   @include easeInOut();
   &:hover {
     color: lighten($secondary-color, 10);

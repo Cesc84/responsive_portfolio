@@ -35,12 +35,12 @@
 
 // Menu Overlay
 .menu {
-  background: $grey;
+  background: darken($primary-color, 6);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   opacity: 0.9;
   visibility: hidden;
   @include easeInOut;
@@ -60,7 +60,7 @@
       display: inline-block;
       text-align: center;
       // transform: translate3d(100%, -100%, 0);
-      padding: 28px 24px;
+      padding: 38px 24px;
       @include easeInOut;
       // slide in from right
       // &.show {

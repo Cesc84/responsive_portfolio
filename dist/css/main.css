@@ -25,7 +25,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #cccc00;
+  color: #FFFFFF;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -64,12 +64,12 @@ a {
       transform: rotate(-45deg) translate(6px, -4px); }
 
 .menu {
-  background: #444444;
+  background: #5a5a87;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   opacity: 0.9;
   visibility: hidden;
   -webkit-transition: all 300ms ease-in-out;
@@ -88,7 +88,7 @@ a {
     .menu ul li {
       display: inline-block;
       text-align: center;
-      padding: 28px 24px;
+      padding: 38px 24px;
       -webkit-transition: all 300ms ease-in-out;
       -moz-transition: all 300ms ease-in-out;
       -o-transition: all 300ms ease-in-out;
@@ -173,6 +173,7 @@ a {
   p {
     font-size: .8rem; }
   .scrollbar {
+    top: 450px !important;
     right: -5px !important; }
   .container .headings {
     top: 42% !important; }
@@ -180,8 +181,10 @@ a {
     font-size: 3rem; }
   .container .content {
     width: 100%; }
-  #hero .icons {
-    left: 23px !important; }
+  #hero {
+    height: 600px !important; }
+    #hero .icons {
+      left: 23px !important; }
   .bio .large-6 {
     height: auto; }
     .bio .large-6 .content {
@@ -349,10 +352,10 @@ header {
  ++++++ Classes to apply on Shrink Header function ++++++
 */
 .desktop-shrink {
-  height: 50px;
+  height: 70px;
   opacity: .8; }
   .desktop-shrink li {
-    padding: 15px 24px !important; }
+    padding: 22px 24px !important; }
     .desktop-shrink li .nav-link {
       font-size: 0.85rem !important; }
 
@@ -371,7 +374,7 @@ header {
 section, footer {
   position: relative;
   width: 100%;
-  height: 600px; }
+  height: 700px; }
   section.bio, footer.bio {
     background: #444444; }
   section.white, footer.white {
@@ -428,12 +431,12 @@ section, footer {
 */
 .scrollbar {
   position: absolute;
-  top: 450px;
+  top: 550px;
   right: 2px;
   z-index: 1051;
   font-weight: 300;
   font-size: .7rem;
-  color: #cccc00;
+  color: #FFFFFF;
   transform: rotate(90deg);
   cursor: pointer;
   padding: 0; }
@@ -450,7 +453,7 @@ section, footer {
     left: 100%;
     width: 70px;
     height: 2px;
-    background: #cccc00; }
+    background: #FFFFFF; }
 
 /*
  ++++++ Bg Video ++++++
@@ -468,6 +471,10 @@ main .fullscreen-bg {
   left: 0;
   overflow: hidden;
   z-index: -100; }
+  main .fullscreen-bg > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   main .fullscreen-bg:after {
     content: '';
     position: absolute;
@@ -567,7 +574,14 @@ footer {
       top: 36%;
       right: 30px; }
       footer.white .icons a {
-        font-size: 1.8rem; }
+        color: #cccc00;
+        font-size: 1.8rem;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out; }
+        footer.white .icons a:hover {
+          color: #f5f500; }
     footer.white .copyright {
       bottom: 0 !important;
       width: 100%; }
