@@ -4,18 +4,18 @@
 #grid {
   background: lighten($secondary-color, 55);
   height: auto;
-  a {
-    &:hover {
-      color: $secondary-color;
-    }
-  }
+  // a {
+  //   &:hover {
+  //     color: $secondary-color;
+  //   }
+  // }
   .thumb {
     display: block;
     position: relative;
     float: left;
     width: calc(100% / 3 - 20px);
     margin: 20px 10px 0 10px;
-    // border-bottom: 3px solid $secondary-color;
+    border-bottom: 3px solid $secondary-color;
     color: $white;
     .thumb-image {
       width: 100%;
