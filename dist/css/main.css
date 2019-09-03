@@ -225,13 +225,14 @@ a {
 #grid {
   background: #ffffe6;
   height: auto; }
+  #grid a:hover {
+    color: #cccc00; }
   #grid .thumb {
     display: block;
     position: relative;
     float: left;
     width: calc(100% / 3 - 20px);
     margin: 20px 10px 0 10px;
-    border-bottom: 3px solid #cccc00;
     color: #FFFFFF; }
     #grid .thumb .thumb-image {
       width: 100%;
@@ -547,7 +548,7 @@ footer {
       top: 45%;
       width: 500px; }
     footer.white .icons {
-      top: 36%;
+      top: 41%;
       right: 30px; }
       footer.white .icons a {
         font-size: 1.8rem; }
