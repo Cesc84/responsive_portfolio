@@ -124,7 +124,7 @@ section, footer {
 */
 .scrollbar {
   position: absolute;
-  top: 550px;
+  top: 620px;
   right: 2px;
   z-index: 1051;
   font-weight: 300;
@@ -134,18 +134,18 @@ section, footer {
   cursor: pointer;
   padding: 0;
   &:hover {
-    &::after {
+    &::before {
       @include easeInOut;
       background: lighten($secondary-color, 10);
     }
   }
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: 100%;
-    width: 70px;
-    height: 2px;
+    right: 90px;
+    width: 320px;
+    height: 1px;
     background: $white;
   }
 }
@@ -230,8 +230,9 @@ main {
   position: absolute;
   z-index: 99;
   a {
-    display: block;
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding-right: 1.5rem;
     margin-bottom: 5px;
     &:hover {
       color: lighten($secondary-color, 5);
@@ -243,16 +244,29 @@ main {
  ++++++ Bio Section ++++++
 */
 .bio {
+  // border-top: 3px solid $secondary-color;
   height: auto;
   .portrait {
+    position: relative;
     img {
       width: auto;
       height: 480px;
+      // border-bottom: 3px solid $secondary-color;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 70px;
+      transform: translateY(-50%);
+      width: 2px;
+      height: 350px;
+      background: $secondary-color;
     }
   }
   .content {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 120px;
   }
 }
 
@@ -274,7 +288,22 @@ main {
     top: 50%;
   }
 }
-
+.blue {
+  h2 {
+    position: relative;
+    padding-bottom: 50px;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 180px;
+      height: 2px;
+      background: $secondary-color;
+    }
+  }
+}
 /*
  ++++++ White Section ++++++
 */
@@ -301,6 +330,7 @@ footer {
       top: 36%;
       right: 30px;
       a {
+        display: block;
         color: $secondary-color;
         font-size: 1.8rem;
         @include easeInOut;

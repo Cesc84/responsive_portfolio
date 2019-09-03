@@ -237,7 +237,6 @@ a {
     float: left;
     width: calc(100% / 3 - 20px);
     margin: 20px 10px 0 10px;
-    border-bottom: 3px solid #cccc00;
     color: #FFFFFF; }
     #grid .thumb .thumb-image {
       width: 100%;
@@ -271,8 +270,22 @@ a {
           transform: translate(-50%);
           transition: all 0.3s ease-in-out 0.2s;
           opacity: 0; }
+    #grid .thumb:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background: #666699;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
     #grid .thumb:hover .thumb-info {
       opacity: 1; }
+    #grid .thumb:hover:after {
+      background: #cccc00; }
     #grid .thumb:hover .details {
       bottom: 30px !important;
       opacity: 1 !important; }
@@ -431,7 +444,7 @@ section, footer {
 */
 .scrollbar {
   position: absolute;
-  top: 550px;
+  top: 620px;
   right: 2px;
   z-index: 1051;
   font-weight: 300;
@@ -440,19 +453,19 @@ section, footer {
   transform: rotate(90deg);
   cursor: pointer;
   padding: 0; }
-  .scrollbar:hover::after {
+  .scrollbar:hover::before {
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     background: yellow; }
-  .scrollbar::after {
+  .scrollbar::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: 100%;
-    width: 70px;
-    height: 2px;
+    right: 90px;
+    width: 320px;
+    height: 1px;
     background: #FFFFFF; }
 
 /*
@@ -513,8 +526,9 @@ main .fullscreen-bg {
   position: absolute;
   z-index: 99; }
   .icons a {
-    display: block;
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding-right: 1.5rem;
     margin-bottom: 5px; }
     .icons a:hover {
       color: #e6e600; }
@@ -524,12 +538,23 @@ main .fullscreen-bg {
 */
 .bio {
   height: auto; }
-  .bio .portrait img {
-    width: auto;
-    height: 480px; }
+  .bio .portrait {
+    position: relative; }
+    .bio .portrait img {
+      width: auto;
+      height: 480px; }
+    .bio .portrait:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 70px;
+      transform: translateY(-50%);
+      width: 2px;
+      height: 350px;
+      background: #cccc00; }
   .bio .content {
     text-align: center;
-    padding-top: 90px; }
+    padding-top: 120px; }
 
 /*
  ++++++ Blue Section ++++++
@@ -550,6 +575,19 @@ main .fullscreen-bg {
 .white article,
 .white .wrapper {
   top: 50%; }
+
+.blue h2 {
+  position: relative;
+  padding-bottom: 50px; }
+  .blue h2:after {
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 2px;
+    background: #cccc00; }
 
 /*
  ++++++ White Section ++++++
@@ -574,6 +612,7 @@ footer {
       top: 36%;
       right: 30px; }
       footer.white .icons a {
+        display: block;
         color: #cccc00;
         font-size: 1.8rem;
         -webkit-transition: all 300ms ease-in-out;
