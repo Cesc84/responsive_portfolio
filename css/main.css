@@ -182,9 +182,9 @@ a {
     width: 100%; }
   #hero .icons {
     left: 23px !important; }
-  .orange .large-6 {
+  .bio .large-6 {
     height: auto; }
-    .orange .large-6 .content {
+    .bio .large-6 .content {
       padding: 0;
       padding-top: 2rem; }
   .portrait img {
@@ -223,15 +223,16 @@ a {
  ++++++ Grid ++++++
 */
 #grid {
+  background: #ffffe6;
   height: auto; }
-  #grid a:hover {
-    color: #cccc00; }
   #grid .thumb {
     display: block;
     position: relative;
     float: left;
     width: calc(100% / 3 - 20px);
-    margin: 20px 10px 0 10px; }
+    margin: 20px 10px 0 10px;
+    border-bottom: 3px solid #cccc00;
+    color: #FFFFFF; }
     #grid .thumb .thumb-image {
       width: 100%;
       height: 300px;
@@ -269,6 +270,8 @@ a {
     #grid .thumb:hover .details {
       bottom: 30px !important;
       opacity: 1 !important; }
+      #grid .thumb:hover .details:hover {
+        color: #cccc00; }
 
 /* +++++++++ form +++++++++ */
 form {
@@ -326,8 +329,11 @@ body {
   color: #FFFFFF;
   font-family: "Poppins", Arial, Helvetica, Sans-Serif;
   line-height: 1.5;
-  letter-spacing: 1.8px; }
+  letter-spacing: 1.8px;
+  max-width: 1280px;
+  margin: 0 auto; }
   body .container {
+    position: relative;
     width: 100%;
     margin: 0 auto; }
 
@@ -363,7 +369,7 @@ section, footer {
   position: relative;
   width: 100%;
   height: 600px; }
-  section.orange, footer.orange {
+  section.bio, footer.bio {
     background: #009999; }
   section.white, footer.white {
     background: #FFFFFF; }
@@ -487,16 +493,19 @@ section, footer {
     font-size: 1.5rem;
     margin-bottom: 5px; }
     .icons a:hover {
-      color: yellow; }
+      color: #e6e600; }
 
 /*
- ++++++ Orange Section ++++++
+ ++++++ Bio Section ++++++
 */
-.orange {
+.bio {
   height: auto; }
-  .orange .portrait img {
+  .bio .portrait img {
     width: auto;
     height: 480px; }
+  .bio .content {
+    text-align: center;
+    padding-top: 90px; }
 
 /*
  ++++++ Blue Section ++++++
@@ -535,9 +544,10 @@ footer {
     footer.white h2 {
       padding-bottom: 1.5rem; }
     footer.white .wrapper {
+      top: 45%;
       width: 500px; }
     footer.white .icons {
-      top: 41%;
+      top: 36%;
       right: 30px; }
       footer.white .icons a {
         font-size: 1.8rem; }
@@ -552,4 +562,4 @@ footer {
         text-decoration: underline; }
         footer.white .copyright #terms:hover {
           background: #FFFFFF;
-          color: yellow; }
+          color: #e6e600; }
