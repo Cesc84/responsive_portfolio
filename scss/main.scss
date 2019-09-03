@@ -248,7 +248,9 @@ main {
   height: auto;
   .portrait {
     position: relative;
+    margin: 0;
     img {
+      line-height: 0;
       width: auto;
       height: 480px;
       // border-bottom: 3px solid $secondary-color;
