@@ -64,7 +64,7 @@ header {
 section, footer {
   position: relative;
   width: 100%;
-  &.bio { background: $primary-color; }
+  &.bio { background: $grey; }
   &.white { background: $white; }
   &.blue { background: $primary-color; }
   height: 600px;
@@ -174,8 +174,8 @@ main {
       width: 100%;
       height: 100%;
       z-index: 10;
-      background: $grey;
-      opacity: 0.75;
+      background: $primary-color;
+      opacity: 0.6;
     }
   }
 }
