@@ -373,11 +373,11 @@ section, footer {
   width: 100%;
   height: 600px; }
   section.bio, footer.bio {
-    background: #009999; }
+    background: #444444; }
   section.white, footer.white {
     background: #FFFFFF; }
   section.blue, footer.blue {
-    background: #009999; }
+    background: #666699; }
 
 .row {
   display: block;
@@ -476,8 +476,8 @@ main .fullscreen-bg {
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: #444444;
-    opacity: 0.8; }
+    background: #666699;
+    opacity: 0.6; }
 
 /*
  ++++++ Hero Section ++++++
