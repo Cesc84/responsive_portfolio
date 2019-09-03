@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <title>Project</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <!-- 3 lines - menu icon -->
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <!-- <div class="menu-branding">
+          <div class="portrait"></div>
+        </div> -->
+        <ul class="menu-nav">
+          <li class="nav-item"><a href="#home" class="nav-link">First</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Second</a></li>
+          <li class="nav-item"><a href="#grid" class="nav-link">Third</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Fourth</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- scrolldown -->
+    <aside>
+      <a href="#about" class="scrollbar">Scrolldown</a>
+    </aside>
+
+    <!-- MAIN -->
+    <main id="main">
+      <section id="hero">
+        <div class="row">
+          <div class="headings">
+            <h2 data-aos="fade-right" data-aos-duration="1200">Don’t just aspire to make a living.</h2>
+            <h1 data-aos="fade-right" data-aos-duration="1200">Aspire to make a <span class="highlight">Difference</span></h1>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="orange">
+        <div class="row">
+          <div class="columns large-6 portrait"><img src="img/me.jpeg" data-aos="fade-left" data-aos-duration="1200"></div>
+          <div class="columns large-6">
+            <article class="content">
+              <h2 data-aos="fade-up" data-aos-duration="1200">Aspire to make a Difference</h2>
+              <span><span>
+                  <p data-aos="fade-up" data-aos-duration="1200">Fail big, that’s right. You only live once, so do what you feel passionate about, passionate about. Take chances professionally, don’t be afraid to fail.</p>
+                  <p data-aos="fade-up" data-aos-duration="1200">So have dreams, but have goals, life goals, yearly goals, monthly goals, daily goals. Hard work works, working really hard is what successful people do.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="grid" class="white">
+        <div class="row"></div>
+      </section>
+
+      <section id="third" class="blue">
+        <div class="row">
+          <article class="content">
+            <h2 data-aos="fade-left" data-aos-duration="1200">Visit Us At Chinook Centre</h2>
+            <p data-aos="fade-left" data-aos-duration="1200">Mon to Sat 9:30 - 9 <br /> Sun 11 - 7 <br /> Across from Lululemon on level 1 <br /><br />Grand Opening on April </p>
+            <a class="button" title="Book an Appointment">Discover</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="white">
+        <div class="row">
+          <div class="wrapper">
+            <h2 data-aos="fade-up" data-aos-duration="1200">How To Reach Me</h2>
+            <!-- form -->
+            <form data-aos="zoom-in" data-aos-duration="1200">
+              <input type="text" name="name" id="name" placeholder="Name"><span id="nameError"></span>
+              <input type="text" name="name" id="email" placeholder="Email"><span id="emailError"></span>
+              <input type="textarea" name="name" id="msg" placeholder="Your Message"><span id="nameError"></span>
+              <a href="#" class="button" id="submit" onclick="submitForm()">Send</a>
+            </form>
+          </div>
+          <!-- social network sidebar -->
+          <div class="icons">
+            <a href="#" data-aos="fade-left" data-aos-duration="1200"><i class="fab fa-twitter"></i></a>
+            <a href="#" data-aos="fade-left" data-aos-duration="1200"><i class="fab fa-facebook"></i></a>
+            <a href="#" data-aos="fade-left" data-aos-duration="1200"><i class="fab fa-instagram"></i></a>
+            <a href="#" data-aos="fade-left" data-aos-duration="1200"><i class="fab fa-github"></i></a>
+          </div>
+          <div class="copyright">
+            <h5>Copyright 2019 Cesc All right reserved</h5>
+            <span><a href="#" id="terms" title="T&C">See contest Terms and Conditions</a></span>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
