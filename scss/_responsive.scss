@@ -76,11 +76,11 @@
    ++++++ Scrollbar ++++++
   */
   .scrollbar  {
-    top: 445px!important;
+    top: 442px!important;
     right: -5px!important;
     &::before {
       width: 80px!important;
-      left: 80px;
+      left: 84px;
     }
   }
 
@@ -189,22 +189,23 @@
   }
 
   .white {
+    min-height: 600px!important;
     h2 {
       position: relative;
       padding-bottom: 1.5rem!important;
-      &:before {
-        content: '';
-        position: absolute;
-        top: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 180px;
-        height: 2px;
-        background: $secondary-color;
-      }
+      // &:before {
+      //   content: '';
+      //   position: absolute;
+      //   top: -20px;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      //   width: 180px;
+      //   height: 2px;
+      //   background: $secondary-color;
+      // }
     }
     .icons {
-      top: -3.5rem!important;
+      bottom: 80px!important;
       left: 6%;
       a {
         display: inline-block!important;

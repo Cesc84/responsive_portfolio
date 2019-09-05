@@ -324,21 +324,23 @@ footer {
   position: relative;
 	&.white {
 		text-align: center;
-		padding: 30px 0;
+		// padding: 30px 0;
     h2 {
       padding-bottom: 1.5rem;
     }
     .wrapper {
-      top: 45%;
+      top: 40%;
       width: 500px;
     }
     .icons {
-      top: 36%;
-      right: 30px;
+      bottom: 120px;
+      left: 50%;
+      transform: translateX(-50%)!important;
       a {
-        display: block;
+        // display: block;
         color: $secondary-color;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
         @include easeInOut;
         &:hover {
           color: darken($secondary-color, 5);

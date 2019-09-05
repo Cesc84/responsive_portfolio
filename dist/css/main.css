@@ -164,11 +164,11 @@ a {
    ++++++ Scrollbar ++++++
   */
   .scrollbar {
-    top: 445px !important;
+    top: 442px !important;
     right: -5px !important; }
     .scrollbar::before {
       width: 80px !important;
-      left: 80px; }
+      left: 84px; }
   .content {
     text-align: center;
     padding: 2rem; }
@@ -220,24 +220,17 @@ a {
       opacity: 1 !important; }
   .blue h2:after {
     bottom: 24px !important; }
-  .white h2 {
-    position: relative;
-    padding-bottom: 1.5rem !important; }
-    .white h2:before {
-      content: '';
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 180px;
-      height: 2px;
-      background: #cccc00; }
-  .white .icons {
-    top: -3.5rem !important;
-    left: 6%; }
-    .white .icons a {
-      display: inline-block !important;
-      padding: 90px 10px 7px 10px; }
+  .white {
+    min-height: 600px !important; }
+    .white h2 {
+      position: relative;
+      padding-bottom: 1.5rem !important; }
+    .white .icons {
+      bottom: 80px !important;
+      left: 6%; }
+      .white .icons a {
+        display: inline-block !important;
+        padding: 90px 10px 7px 10px; }
   .wrapper {
     width: 100% !important; }
     .wrapper .button {
@@ -634,20 +627,20 @@ main .fullscreen-bg {
 footer {
   position: relative; }
   footer.white {
-    text-align: center;
-    padding: 30px 0; }
+    text-align: center; }
     footer.white h2 {
       padding-bottom: 1.5rem; }
     footer.white .wrapper {
-      top: 45%;
+      top: 40%;
       width: 500px; }
     footer.white .icons {
-      top: 36%;
-      right: 30px; }
+      bottom: 120px;
+      left: 50%;
+      transform: translateX(-50%) !important; }
       footer.white .icons a {
-        display: block;
         color: #cccc00;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
         -webkit-transition: all 300ms ease-in-out;
         -moz-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
