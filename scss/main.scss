@@ -17,7 +17,7 @@ body {
   font-family: $font-family;
   line-height: 1.5;
   letter-spacing: 1.8px;
-  max-width: 1280px;
+  // max-width: 1280px;
   margin: 0 auto;
   .container {
     position: relative;
@@ -37,23 +37,28 @@ header {
 */
 .desktop-shrink {
   height: 70px;
-  opacity: .8;
-  li {
-    padding: 22px 24px!important;
-    .nav-link {
-      font-size: .85rem!important;
+  background: darken($primary-color, 6);
+  ul{
+    li {
+      padding-top: 24px;
+      .nav-link {
+        font-size: .8rem!important;
+      }
     }
   }
 }
 
 .mobile-shrink {
-  height: 200px;
+  height: 120px;
   ul{
-    top: 67%;
+    top: 54%;
     li {
       padding-bottom: .5rem!important;
       .nav-link {
-        font-size: 1.2rem!important;
+        font-size: 1rem!important;
+      }
+      &:first-child {
+        display: none;
       }
     }
   }
@@ -67,7 +72,7 @@ section, footer {
   &.bio { background: $grey; }
   &.white { background: $white; }
   &.blue { background: $primary-color; }
-  height: 700px;
+  min-height: 700px;
 }
 
 .row {
@@ -113,10 +118,9 @@ section, footer {
  }
 
 .highlight {
-  display: block;
-  font-size: 4rem;
+  // display: block;
+  // font-size: 4rem;
   color: $secondary-color;
-  font-weight: 700;
 }
 
 /*
@@ -125,20 +129,14 @@ section, footer {
 .scrollbar {
   position: absolute;
   top: 620px;
-  right: 2px;
-  z-index: 1051;
+  right: 0;
+  // z-index: 1051;
   font-weight: 300;
   font-size: .7rem;
   color: $white;
   transform: rotate(90deg);
   cursor: pointer;
   padding: 0;
-  &:hover {
-    &::before {
-      @include easeInOut;
-      background: lighten($secondary-color, 10);
-    }
-  }
   &::before {
     content: '';
     position: absolute;
@@ -147,6 +145,12 @@ section, footer {
     width: 320px;
     height: 1px;
     background: $white;
+    @include easeInOut;
+  }
+  &:hover {
+    &::before {
+      background: $secondary-color;
+    }
   }
 }
 /*
@@ -218,7 +222,7 @@ main {
     }
     .icons {
       bottom: 22px;
-      left: 30px;
+      left: 35px;
     }
   }
 }
@@ -228,14 +232,14 @@ main {
 */
 .icons {
   position: absolute;
-  z-index: 99;
+  // z-index: 99;
   a {
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-right: 1.5rem;
     margin-bottom: 5px;
     &:hover {
-      color: lighten($secondary-color, 5);
+      // color: lighten($secondary-color, 5);
     }
   }
 }
@@ -297,7 +301,7 @@ main {
     &:after {
       content: '';
       position: absolute;
-      bottom: 25%;
+      bottom: 27px;
       left: 50%;
       transform: translateX(-50%);
       width: 180px;
@@ -337,7 +341,7 @@ footer {
         font-size: 1.8rem;
         @include easeInOut;
         &:hover {
-          color: lighten($secondary-color, 8);
+          color: darken($secondary-color, 5);
         }
       }
     }
@@ -352,7 +356,7 @@ footer {
   			text-decoration: underline;
   			&:hover {
   				background: $white;
-  				color: lighten($secondary-color, 5);
+  				color: darken($secondary-color, 5);
         }
       }
     }

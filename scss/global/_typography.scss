@@ -10,13 +10,11 @@ h3 {
 
 h1 {
   font-size: 3rem;
-  z-index: 99;
-  line-height: 1.2;
 }
 
 h2 {
   font-size: 2rem;
-  padding-bottom: 1.4rem;
+  padding-top: 1rem;
 }
 
 h3 {
@@ -37,6 +35,6 @@ a {
   color: $white;
   @include easeInOut();
   &:hover {
-    color: lighten($secondary-color, 10);
+    color: $secondary-color;
   }
 }

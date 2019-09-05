@@ -3,7 +3,9 @@
 
 }
 
-// Desktops & Laptops
+/*
+ ** Desktops & Laptops
+ */
 @include mediaLg {
   .content {
     text-align: center;
@@ -17,18 +19,29 @@
   }
 }
 
-// Tablets & Small Laptops
+/*
+ ** Tablets & Small Laptops
+ */
 @include mediaMd {
   p {
     font-size: .9rem;
   }
   section {
+    min-height: 600px!important;
     .row {
       padding: 40px 30px;
     }
   }
-
+  /*
+   ++++++ Menu ++++++
+  */
+  // Menu Icon
+  .menu-btn {
+    opacity: 1;
+  }
   .menu {
+    background: darken($primary-color, 6);
+    top: 0;
     right: 0;
     height: 600px;
     transform: translate(-50%, -50%) translate3d(100%, -100%, 0);
@@ -37,32 +50,50 @@
     }
     ul {
       width: 100%;
-      top: 75%;
-      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
       li {
         display: block;
         padding: 0;
         padding-bottom: 1.5rem;
         transform: translate3d(100%, -100%, 0);
+        &:first-child {
+          padding-right: 0;
+          padding-bottom: 6rem;
+        }
         // slide in from right
         &.show {
           transform: translate3d(0, 0, 0);
         }
         .nav-link {
           font-size: 1.8rem;
-          &:after {
-            top: 50%;
-            left: -24px;
-            transform: translateY(-50%);
-          }
         }
       }
+    }
+  }
+  /*
+   ++++++ Scrollbar ++++++
+  */
+  .scrollbar  {
+    top: 445px!important;
+    right: -5px!important;
+    &::before {
+      width: 80px!important;
+      left: 80px;
     }
   }
 
   .content {
     text-align: center;
     padding: 2rem;
+  }
+
+  #hero {
+    height: 600px!important;
+    .icons {
+      bottom: 15px!important;
+    }
   }
 
   .portrait {
@@ -83,7 +114,9 @@
 
 }
 
-// Smarthphone
+/*
+** Smarthphone
+*/
 @include mediaSm {
   h1 {
     font-size: 1.8rem;
@@ -98,32 +131,24 @@
     font-size: .8rem;
   }
 
-  .scrollbar  {
-    top: 525px!important;
-    right: -5px!important;
-    &::before {
-      width: 220px!important;
-    }
-  }
-
   .container {
     .headings {
-      top: 42%!important;
+      top: 50%!important;
     }
-    .highlight {
-      font-size: 3rem;
-    }
+    // .highlight {
+    //   font-size: 3rem;
+    // }
     .content {
       width: 100%;
     }
-  }
-
-  #hero {
-    height: 600px!important;
     .icons {
-      left: 25px!important;
+      a {
+        font-size: .9rem!important;
+      }
+
     }
   }
+
   .bio {
     .large-6 {
       height: auto;
@@ -155,17 +180,35 @@
     }
   }
 
+  .blue {
+    h2 {
+      &:after {
+        bottom: 24px!important;
+      }
+    }
+  }
+
   .white {
     h2 {
-      padding-bottom: 2rem!important;
+      position: relative;
+      padding-bottom: 1.5rem!important;
+      &:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180px;
+        height: 2px;
+        background: $secondary-color;
+      }
     }
     .icons {
       top: -3.5rem!important;
       left: 6%;
       a {
         display: inline-block!important;
-        font-size: 1.5rem!important;
-        padding: 100px 10px 7px 10px;
+        padding: 90px 10px 7px 10px;
       }
     }
   }
@@ -180,7 +223,9 @@
 }
 
 
-//   // Delay each nav item slide by .1s
+/*
+** Delay each nav item slide by .1s
+*/
   @for $x from 1 through 4 {
     .nav-item:nth-child(#{$x}) {
       transition-delay: $x * 0.2s;
