@@ -260,7 +260,7 @@
       position: relative;
     }
     .icons {
-      bottom: 80px!important;
+      bottom: 130px!important;
       left: 6%;
       .item {
         display: inline-block!important;
@@ -274,6 +274,9 @@
     .button {
       width: 100%;
     }
+  }
+  .copyright {
+    bottom: 12px!important;
   }
 }
 

@@ -269,7 +269,7 @@ a {
     .white h2 {
       position: relative; }
     .white .icons {
-      bottom: 80px !important;
+      bottom: 130px !important;
       left: 6%; }
       .white .icons .item {
         display: inline-block !important;
@@ -277,7 +277,9 @@ a {
   .wrapper {
     width: 100% !important; }
     .wrapper .button {
-      width: 100%; } }
+      width: 100%; }
+  .copyright {
+    bottom: 12px !important; } }
 
 /*
 ** Delay each nav item slide by .1s
@@ -667,6 +669,8 @@ footer {
       bottom: 120px;
       left: 50%;
       transform: translateX(-50%) !important; }
+      footer.white .icons .item:last-child {
+        padding-right: 0 !important; }
       footer.white .icons a {
         color: #cccc00;
         font-size: 1.2rem;
@@ -677,7 +681,7 @@ footer {
         footer.white .icons a:hover {
           color: #b3b300; }
     footer.white .copyright {
-      bottom: 0 !important;
+      bottom: 12px;
       width: 100%; }
       footer.white .copyright #terms {
         font-size: .7em;

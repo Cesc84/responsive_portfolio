@@ -326,6 +326,9 @@ footer {
       bottom: 120px;
       left: 50%;
       transform: translateX(-50%)!important;
+      .item:last-child {
+        padding-right: 0!important;
+      }
       a {
         // display: block;
         color: $secondary-color;
@@ -337,7 +340,7 @@ footer {
       }
     }
   	.copyright {
-  		bottom: 0!important;
+  		bottom: 12px;
       width: 100%;
   		#terms {
   			font-size: .7em;
