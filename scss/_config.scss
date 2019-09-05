@@ -3,37 +3,13 @@ $secondary-color: #cccc00;
 $grey: #444444;
 $white: #FFFFFF;
 $black: #000000;
-// $show-home-image: true;
-// $home-image: url(..css/img/mj.jpg);
-// $background-opacity: 0.9;
 
 @mixin easeInOut {
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out!important;
 }
-
-// @mixin background {
-//   @if $show-home-image {
-//     &#hero {
-//       background: $home-image;
-//       background-attachment: fixed;
-//       background-size: cover;
-//       position: relative;
-//       &:after {
-//         content: '';
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         z-index: -1;
-//         background: rgba($grey, $background-opacity);
-//       }
-//     }
-//   }
-// }
 
 // Media Query Mixins
 @mixin mediaSm {

@@ -71,7 +71,7 @@ section, footer {
   width: 100%;
   &.bio { background: $grey; }
   &.white { background: $white; }
-  &.blue { background: $primary-color; }
+  &.purple { background: $primary-color; }
   min-height: 700px;
 }
 
@@ -277,9 +277,9 @@ main {
 }
 
 /*
- ++++++ Blue Section ++++++
+ ++++++ Purple Section ++++++
 */
-.blue,
+.purple,
 .white {
   article,
   .wrapper,
@@ -294,7 +294,7 @@ main {
     top: 50%;
   }
 }
-.blue {
+.purple {
   h2 {
     position: relative;
     padding-bottom: 50px;
@@ -308,6 +308,9 @@ main {
       height: 2px;
       background: $secondary-color;
     }
+  }
+  .button {
+    @include easeInOut;
   }
 }
 /*
