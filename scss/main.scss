@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+/*
+ ++++++ Global ++++++
+*/
+
 body {
   background: $white;
   color: $white;
@@ -32,47 +36,13 @@ header {
   width: 100%;
 }
 
-/*
- ++++++ Classes to apply on Shrink Header function ++++++
-*/
-.desktop-shrink {
-  height: 70px;
-  background: darken($primary-color, 6);
-  ul{
-    li {
-      padding-top: 24px;
-      .nav-link {
-        font-size: .8rem!important;
-      }
-    }
-  }
-}
-
-.mobile-shrink {
-  height: 120px;
-  ul{
-    top: 54%;
-    li {
-      padding-bottom: .5rem!important;
-      .nav-link {
-        font-size: 1rem!important;
-      }
-      &:first-child {
-        display: none;
-      }
-    }
-  }
-}
-/*
- ++++++ Global ++++++
-*/
 section, footer {
   position: relative;
   width: 100%;
   &.bio { background: $grey; }
   &.white { background: $white; }
   &.purple { background: $primary-color; }
-  min-height: 700px;
+  height: 700px;
 }
 
 .row {
@@ -99,6 +69,36 @@ section, footer {
   }
 }
 
+ul {
+  list-style: none;
+  li {
+    display: inline-block;
+    text-align: center;
+    & > a {
+      position: relative;
+      font-size: .9rem;
+      font-weight: 300;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 1px;
+        // border-radius: 50%;
+        background: darken($secondary-color, 6);
+        opacity: 1;
+      }
+      &:hover {
+        &:after {
+          @include easeInOut;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 /*
  ++++++ Button ++++++
 */
@@ -118,8 +118,6 @@ section, footer {
  }
 
 .highlight {
-  // display: block;
-  // font-size: 4rem;
   color: $secondary-color;
 }
 
@@ -188,6 +186,10 @@ main {
     }
   }
 }
+
+.content {
+  width: 100%;
+}
 /*
  ++++++ Hero Section ++++++
 */
@@ -219,6 +221,12 @@ main {
       transform: translate(-50%, -50%);
       width: 100%;
       text-align: center;
+      h2 {
+        font-weight: 400;
+        &:after {
+          opacity: 0;
+        }
+      }
     }
     .icons {
       bottom: 22px;
@@ -233,13 +241,13 @@ main {
 .icons {
   position: absolute;
   // z-index: 99;
-  a {
-    display: inline-block;
-    font-size: 1rem;
+  .item {
     padding-right: 1.5rem;
-    margin-bottom: 5px;
-    &:hover {
-      // color: lighten($secondary-color, 5);
+    a {
+      margin-bottom: 5px;
+      &:after {
+        bottom: -6px;
+      }
     }
   }
 }
@@ -257,22 +265,12 @@ main {
       line-height: 0;
       width: auto;
       height: 480px;
-      // border-bottom: 3px solid $secondary-color;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 70px;
-      transform: translateY(-50%);
-      width: 2px;
-      height: 350px;
-      background: $secondary-color;
+      border-bottom: 2px solid $secondary-color;
     }
   }
   .content {
     text-align: center;
-    padding-top: 120px;
+    padding-top: 90px;
   }
 }
 
@@ -297,19 +295,12 @@ main {
 .purple {
   h2 {
     position: relative;
-    padding-bottom: 50px;
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 27px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 180px;
-      height: 2px;
-      background: $secondary-color;
-    }
+  }
+  .content {
+    width: 75%;
   }
   .button {
+    margin-top: 1rem;
     @include easeInOut;
   }
 }
@@ -327,10 +318,6 @@ footer {
   position: relative;
 	&.white {
 		text-align: center;
-		// padding: 30px 0;
-    h2 {
-      padding-bottom: 1.5rem;
-    }
     .wrapper {
       top: 40%;
       width: 500px;
@@ -343,7 +330,6 @@ footer {
         // display: block;
         color: $secondary-color;
         font-size: 1.2rem;
-        padding-bottom: 1rem;
         @include easeInOut;
         &:hover {
           color: darken($secondary-color, 5);
@@ -363,6 +349,38 @@ footer {
   				background: $white;
   				color: darken($secondary-color, 5);
         }
+      }
+    }
+  }
+}
+
+/*
+ ++++++ Classes to apply on Shrink Header function ++++++
+*/
+.desktop-shrink {
+  height: 70px;
+  background: darken($primary-color, 6);
+  ul{
+    li {
+      padding-top: 24px;
+      .nav-link {
+        font-size: .8rem!important;
+      }
+    }
+  }
+}
+
+.mobile-shrink {
+  height: 120px;
+  ul{
+    top: 54%;
+    li {
+      padding-bottom: .5rem!important;
+      .nav-link {
+        font-size: 1rem!important;
+      }
+      &:first-child {
+        display: none;
       }
     }
   }

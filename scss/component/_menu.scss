@@ -40,73 +40,29 @@
 
 // Menu Overlay
 .menu {
-  // background: lighten($primary-color, 1);
   position: absolute;
   top: 0;
   left: 0;
   max-width: 1280px;
   width: 100%;
-  // height: 100px;
   opacity: 0.9;
-  // visibility: hidden;
   @include easeInOut;
-  // slide in from top-right
-  // &.show {
-  //   visibility: visible;
-  // }
   ul {
     position: absolute;
     top: 0;
     left: 0;
-    // width: 50%;
-    list-style: none;
-    // transform: translateX(-50%);
-    // height: 100%;
     li {
-      display: inline-block;
-      text-align: center;
-      // transform: translate3d(100%, -100%, 0);
       padding: 35px;
-      // @include easeInOut;
-      // slide in from right
-      // &.show {
-      //   transform: translate3d(0, 0, 0);
-      // }
       &:first-child {
         padding-right: 5rem;
       }
-      .nav-link {
-        position: relative;
-        font-size: .9rem;
-        font-weight: 300;
+      & > a {
         text-transform: uppercase;
         letter-spacing: 4px;
         &:after {
-          content: '';
-          position: absolute;
           bottom: -12px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 0;
-          height: 1px;
-          // border-radius: 50%;
-          background: darken($secondary-color, 6);
-          opacity: 1;
-        }
-        &:hover {
-          &:after {
-            @include easeInOut;
-            width: 100%;
-          }
         }
       }
     }
   }
 }
-
-// Delay each nav item slide by .1s
-// @for $x from 1 through 4 {
-//   .nav-item:nth-child(#{$x}) {
-//     transition-delay: $x * 0.2s;
-//   }
-// }

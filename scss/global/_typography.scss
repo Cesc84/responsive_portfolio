@@ -1,24 +1,52 @@
 // Headings
+$font-family-titles : 'Raleway', Arial, Helvetica, Sans-Serif;
 $font-family: 'Poppins', Arial, Helvetica, Sans-Serif;
 
 h1,
 h2,
 h3 {
   margin: 0;
+  padding: 0;
+  font-family: $font-family-titles;
   font-weight: 700;
+  line-height: 1.4;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 2px;
+    background: $secondary-color;
+  }
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.8rem;
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  &:after {
+    bottom: 12px;
+  }
 }
 
 h2 {
-  font-size: 2rem;
-  padding-top: 1rem;
+  font-size: 2.4rem;
+  padding-bottom: 4rem;
+  &:after {
+    bottom: 35px;
+  }
 }
 
 h3 {
   font-size: 1.5rem;
+  &:after {
+    bottom: 0;
+  }
+}
+
+h5, p, a {
+  font-family: $font-family;
 }
 
 h5 {
@@ -26,11 +54,12 @@ h5 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: .9rem;
   padding-bottom: 2rem;
 }
 
 a {
+  font-size: 1rem;
   text-decoration: none;
   color: $white;
   @include easeInOut();
