@@ -107,7 +107,7 @@ function scrollFunction() {
   }
 }
 
-// 
+//
 // var data = {
 //   "thumb": [{
 //       "image": "img/thumb-one.jpeg",
