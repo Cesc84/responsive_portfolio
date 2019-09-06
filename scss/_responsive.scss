@@ -111,16 +111,13 @@
           font-weight: 700!important;
         }
       }
-      // .item {
-      //   color: $primary-color!important;
-      // }
     }
   }
   /*
    ++++++ Scrollbar ++++++
   */
   .scrollbar  {
-    bottom: 163px!important;
+    bottom: 138px!important;
     right: -5px!important;
     &::before {
       width: 80px!important;
@@ -146,7 +143,7 @@
     height: 100vh!important;
     .icons {
       left: 30px!important;
-      bottom: 40px!important;
+      bottom: 15px!important;
     }
   }
 
@@ -233,7 +230,7 @@
     .large-6 {
       height: auto;
       .content {
-          padding: 3rem 0 1rem 0!important;
+          padding: 1rem 0!important;
       }
     }
   }

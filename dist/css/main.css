@@ -195,7 +195,7 @@ a {
    ++++++ Scrollbar ++++++
   */
   .scrollbar {
-    bottom: 163px !important;
+    bottom: 138px !important;
     right: -5px !important; }
     .scrollbar::before {
       width: 80px !important;
@@ -210,7 +210,7 @@ a {
     height: 100vh !important; }
     #hero .icons {
       left: 30px !important;
-      bottom: 40px !important; }
+      bottom: 15px !important; }
   .portrait img {
     width: 100% !important;
     height: 100%; }
@@ -259,7 +259,7 @@ a {
   .bio .large-6 {
     height: auto; }
     .bio .large-6 .content {
-      padding: 3rem 0 1rem 0 !important; }
+      padding: 1rem 0 !important; }
   .portrait:after {
     display: none; }
   .portrait img {
@@ -714,6 +714,10 @@ footer {
   height: 70px;
   background: #FFFFFF; }
   .desktop-shrink ul li {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out !important;
     padding-top: 24px; }
     .desktop-shrink ul li .nav-link {
       font-size: 0.8rem !important;

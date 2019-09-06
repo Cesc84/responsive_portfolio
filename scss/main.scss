@@ -381,6 +381,7 @@ footer {
   background: $white;
   ul{
     li {
+      @include easeInOut;
       padding-top: 24px;
       .nav-link {
         font-size: .8rem!important;
