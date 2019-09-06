@@ -316,7 +316,8 @@ a {
       float: left;
       width: calc(100% / 3 - 20px);
       margin: 20px 10px 0 10px;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      overflow: hidden; }
       #grid .row .thumb .thumb-image {
         width: 100%;
         height: 300px;
@@ -374,6 +375,7 @@ form {
     background: #292929;
     border: none;
     border-bottom: 1px solid #ac8e56;
+    color: #FFFFFF;
     margin-bottom: 15px; }
     form input::placeholder {
       color: #FFFFFF;
@@ -424,7 +426,7 @@ body {
   body .container {
     background: #1a1a1a;
     position: relative;
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto; }
 
 header {
@@ -476,12 +478,12 @@ ul {
         width: 0;
         height: 1px;
         background: #997d4b;
-        opacity: 1; }
-      ul li > a:hover:after {
+        opacity: 1;
         -webkit-transition: all 300ms ease-in-out;
         -moz-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
-        transition: all 300ms ease-in-out !important;
+        transition: all 300ms ease-in-out !important; }
+      ul li > a:hover:after {
         width: 100%; }
 
 /*

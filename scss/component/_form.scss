@@ -24,12 +24,8 @@ form {
     background: lighten($primary-color, 6);
     border: none;
     border-bottom: 1px solid $secondary-color;
-    // padding-left: 4px;
+    color: $white;
     margin-bottom: 15px;
-    // @media screen and (max-width: $screen-sm-min) {
-    //   font-size: $h5-small-size;
-    //   margin-bottom: 20px;
-    // }
     &::placeholder {
       color: $white;
       font-size: .9rem;

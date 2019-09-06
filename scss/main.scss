@@ -26,7 +26,7 @@ body {
   .container {
     background: $primary-color;
     position: relative;
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -86,13 +86,12 @@ ul {
         transform: translateX(-50%);
         width: 0;
         height: 1px;
-        // border-radius: 50%;
         background: darken($secondary-color, 6);
         opacity: 1;
+        @include easeInOut;
       }
       &:hover {
         &:after {
-          @include easeInOut;
           width: 100%;
         }
       }
