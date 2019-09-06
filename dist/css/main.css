@@ -422,7 +422,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 98;
+  z-index: 99;
   width: 100%; }
 
 section, footer {
@@ -503,7 +503,7 @@ ul {
   position: absolute;
   bottom: 58px;
   right: 0;
-  z-index: 1051;
+  z-index: 98;
   font-weight: 300;
   font-size: .7rem;
   color: #FFFFFF;
@@ -589,7 +589,7 @@ main .fullscreen-bg {
 */
 .icons {
   position: absolute;
-  z-index: 99; }
+  z-index: 98; }
   .icons .item {
     padding-right: 1.5rem; }
     .icons .item a {
