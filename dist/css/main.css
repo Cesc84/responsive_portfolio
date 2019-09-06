@@ -199,7 +199,7 @@ a {
    ++++++ Scrollbar ++++++
   */
   .scrollbar {
-    bottom: 138px !important;
+    bottom: 163px !important;
     right: -5px !important; }
     .scrollbar::before {
       width: 80px !important;
@@ -214,7 +214,7 @@ a {
     height: 100vh !important; }
     #hero .icons {
       left: 30px !important;
-      bottom: 15px !important; }
+      bottom: 40px !important; }
   .portrait img {
     width: 100% !important;
     height: 100%; }
@@ -253,8 +253,6 @@ a {
     font-size: .7rem; }
   .container .button {
     font-weight: 700 !important; }
-  .container .headings {
-    top: 50% !important; }
   .container .content {
     width: 100%; }
   .container .icons .item {

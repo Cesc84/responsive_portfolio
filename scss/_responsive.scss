@@ -125,7 +125,7 @@
    ++++++ Scrollbar ++++++
   */
   .scrollbar  {
-    bottom: 138px!important;
+    bottom: 163px!important;
     right: -5px!important;
     &::before {
       width: 80px!important;
@@ -151,7 +151,7 @@
     height: 100vh!important;
     .icons {
       left: 30px!important;
-      bottom: 15px!important;
+      bottom: 40px!important;
     }
   }
 
@@ -218,9 +218,6 @@
   .container {
     .button {
       font-weight: 700!important;
-    }
-    .headings {
-      top: 50%!important;
     }
     .content {
       width: 100%;
