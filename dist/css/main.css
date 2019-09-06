@@ -279,6 +279,8 @@ a {
     min-height: 600px !important; }
     .white h2 {
       position: relative; }
+    .white form {
+      padding: 60px !important; }
     .white .icons {
       bottom: 130px !important;
       left: 6%; }
