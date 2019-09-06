@@ -710,11 +710,14 @@ footer {
 */
 .desktop-shrink {
   height: 70px;
-  background: #0b0b0b; }
+  background: #FFFFFF; }
   .desktop-shrink ul li {
     padding-top: 24px; }
     .desktop-shrink ul li .nav-link {
-      font-size: 0.8rem !important; }
+      font-size: 0.8rem !important;
+      color: #1a1a1a; }
+      .desktop-shrink ul li .nav-link:hover {
+        color: #ac8e56; }
 
 .mobile-shrink {
   height: 120px; }

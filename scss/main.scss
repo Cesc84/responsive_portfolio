@@ -376,12 +376,16 @@ footer {
 */
 .desktop-shrink {
   height: 70px;
-  background: darken($primary-color, 6);
+  background: $white;
   ul{
     li {
       padding-top: 24px;
       .nav-link {
         font-size: .8rem!important;
+        color: $primary-color;
+        &:hover {
+          color: $secondary-color;
+        }
       }
     }
   }
