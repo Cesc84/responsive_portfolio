@@ -106,10 +106,14 @@
           transform: translate3d(0, 0, 0);
         }
         .nav-link {
+          color: $primary-color!important;
           font-size: 1.5rem;
           font-weight: 700!important;
         }
       }
+      // .item {
+      //   color: $primary-color!important;
+      // }
     }
   }
   /*
