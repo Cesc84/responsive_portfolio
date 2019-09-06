@@ -110,7 +110,6 @@ a {
       .menu ul li:first-child {
         padding-right: 5rem; }
       .menu ul li > a {
-        color: #1a1a1a;
         text-transform: uppercase;
         letter-spacing: 4px; }
         .menu ul li > a:after {
@@ -189,6 +188,7 @@ a {
         .menu .menu-nav .nav-item.show {
           transform: translate3d(0, 0, 0); }
         .menu .menu-nav .nav-item .nav-link {
+          color: #1a1a1a !important;
           font-size: 1.5rem;
           font-weight: 700 !important; }
   /*
