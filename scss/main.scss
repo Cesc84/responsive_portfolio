@@ -261,6 +261,7 @@ main {
   .portrait {
     position: relative;
     margin: 0;
+    text-align: center;
     img {
       line-height: 0;
       width: auto;
@@ -271,7 +272,7 @@ main {
   .content {
     text-align: center;
     padding-top: 4rem;
-    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 

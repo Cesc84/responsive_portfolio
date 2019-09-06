@@ -15,9 +15,17 @@
  */
 @include mediaLg {
 
+  .bio {
+    .content {
+      padding-top: 3rem!important;
+      padding-left: 1rem!important;
+      padding-right: 2rem!important;
+    }
+  }
+
   .content {
     text-align: center;
-    padding-top: 3rem!important;
+    padding-top: 1rem!important;
   }
 
   #grid {
@@ -160,6 +168,7 @@
   .bio {
     .content {
       padding-top: 3rem!important;
+      padding-left: 1rem!important;
       padding-right: 2rem!important;
     }
   }
