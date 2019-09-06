@@ -94,7 +94,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 1280px;
+  max-width: 100%;
   width: 100%;
   background: #FFFFFF;
   -webkit-transition: all 300ms ease-in-out;
@@ -125,9 +125,13 @@ a {
  ** Desktops & Laptops
  */
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .bio .content {
+    padding-top: 3rem !important;
+    padding-left: 1rem !important;
+    padding-right: 2rem !important; }
   .content {
     text-align: center;
-    padding-top: 3rem !important; }
+    padding-top: 1rem !important; }
   #grid .row {
     padding: 20px 30px 40px 30px; }
     #grid .row .thumb-info {
@@ -218,6 +222,7 @@ a {
     display: none; }
   .bio .content {
     padding-top: 3rem !important;
+    padding-left: 1rem !important;
     padding-right: 2rem !important; }
   #grid .row {
     padding-top: 20px; }
@@ -613,7 +618,8 @@ main .fullscreen-bg {
   height: auto; }
   .bio .portrait {
     position: relative;
-    margin: 0; }
+    margin: 0;
+    text-align: center; }
     .bio .portrait img {
       line-height: 0;
       width: auto;
@@ -622,7 +628,7 @@ main .fullscreen-bg {
   .bio .content {
     text-align: center;
     padding-top: 4rem;
-    padding-right: 3rem; }
+    padding-left: 3rem; }
 
 /*
  ++++++ Purple Section ++++++
