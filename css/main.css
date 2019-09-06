@@ -15,7 +15,7 @@ h3 {
     transform: translateX(-50%);
     width: 180px;
     height: 2px;
-    background: #cccc00; }
+    background: #ac8e56; }
 
 h1 {
   font-size: 3.8rem;
@@ -54,7 +54,7 @@ a {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out !important; }
   a:hover {
-    color: #cccc00; }
+    color: #ac8e56; }
 
 /*
  ** MENU
@@ -96,8 +96,7 @@ a {
   left: 0;
   max-width: 1280px;
   width: 100%;
-  background: #1a1a1a;
-  opacity: .9;
+  background: #FFFFFF;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -111,6 +110,7 @@ a {
       .menu ul li:first-child {
         padding-right: 5rem; }
       .menu ul li > a {
+        color: #1a1a1a;
         text-transform: uppercase;
         letter-spacing: 4px; }
         .menu ul li > a:after {
@@ -348,7 +348,7 @@ a {
         bottom: 30px !important;
         opacity: 1 !important; }
         #grid .row .thumb:hover .details:hover {
-          color: #cccc00; }
+          color: #ac8e56; }
 
 /* +++++++++ form +++++++++ */
 form {
@@ -366,7 +366,7 @@ form {
     display: block;
     background: #292929;
     border: none;
-    border-bottom: 1px solid #cccc00;
+    border-bottom: 1px solid #ac8e56;
     margin-bottom: 15px; }
     form input::placeholder {
       color: #FFFFFF;
@@ -388,7 +388,7 @@ form {
   form textarea:focus {
     outline: none; }
   form a {
-    background: #cccc00 !important;
+    background: #ac8e56 !important;
     color: #FFFFFF !important;
     margin-top: 20px;
     -webkit-transition: all 300ms ease-in-out;
@@ -396,7 +396,7 @@ form {
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out !important; }
     form a:hover {
-      background: #b3b300 !important; }
+      background: #9c804d !important; }
 
 * {
   margin: 0;
@@ -407,7 +407,7 @@ form {
  ++++++ Global ++++++
 */
 body {
-  background: rgba(204, 204, 0, 0.1);
+  background: rgba(172, 142, 86, 0.1);
   color: #FFFFFF;
   font-family: "Poppins", Arial, Helvetica, Sans-Serif;
   line-height: 1.5;
@@ -468,7 +468,7 @@ ul {
         transform: translateX(-50%);
         width: 0;
         height: 1px;
-        background: #adad00;
+        background: #997d4b;
         opacity: 1; }
       ul li > a:hover:after {
         -webkit-transition: all 300ms ease-in-out;
@@ -486,15 +486,15 @@ ul {
   text-align: center;
   padding: 8px 40px;
   border-radius: 25px;
-  background: #cccc00;
+  background: #ac8e56;
   color: #FFFFFF;
   cursor: pointer; }
   .button:hover {
-    background: #adad00;
+    background: #997d4b;
     color: #FFFFFF; }
 
 .highlight {
-  color: #cccc00; }
+  color: #ac8e56; }
 
 /*
  ++++++ Scrollbar ++++++
@@ -523,7 +523,7 @@ ul {
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out !important; }
   .scrollbar:hover::before {
-    background: #cccc00; }
+    background: #ac8e56; }
 
 /*
  ++++++ Bg Video ++++++
@@ -609,7 +609,7 @@ main .fullscreen-bg {
       line-height: 0;
       width: auto;
       height: 480px;
-      border-bottom: 2px solid #cccc00; }
+      border-bottom: 2px solid #ac8e56; }
   .bio .content {
     text-align: center;
     padding-top: 4rem;
@@ -676,14 +676,14 @@ footer {
       footer.white .icons .item:last-child {
         padding-right: 0 !important; }
       footer.white .icons a {
-        color: #cccc00;
+        color: #ac8e56;
         font-size: 1.2rem;
         -webkit-transition: all 300ms ease-in-out;
         -moz-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out !important; }
         footer.white .icons a:hover {
-          color: #b3b300; }
+          color: #9c804d; }
     footer.white .copyright {
       bottom: 12px;
       width: 100%;
@@ -694,7 +694,10 @@ footer {
         text-transform: capitalize;
         text-decoration: underline; }
         footer.white .copyright #terms:hover {
-          color: #b3b300; }
+          color: #9c804d; }
+
+.close .btn-line {
+  background: #ac8e56; }
 
 /*
  ++++++ Classes to apply on Shrink Header function ++++++
