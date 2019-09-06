@@ -191,7 +191,7 @@ a {
    ++++++ Scrollbar ++++++
   */
   .scrollbar {
-    bottom: 138px !important;
+    bottom: 163px !important;
     right: -5px !important; }
     .scrollbar::before {
       width: 80px !important;
@@ -206,7 +206,7 @@ a {
     height: 100vh !important; }
     #hero .icons {
       left: 30px !important;
-      bottom: 15px !important; }
+      bottom: 40px !important; }
   .portrait img {
     width: 100% !important;
     height: 100%; }
@@ -407,7 +407,7 @@ form {
  ++++++ Global ++++++
 */
 body {
-  background: #bfbfbf;
+  background: rgba(204, 204, 0, 0.1);
   color: #FFFFFF;
   font-family: "Poppins", Arial, Helvetica, Sans-Serif;
   line-height: 1.5;
@@ -716,4 +716,4 @@ footer {
       .mobile-shrink ul li .nav-link {
         font-size: 1rem !important; }
       .mobile-shrink ul li:first-child {
-        display: none; }
+        display: none !important; }

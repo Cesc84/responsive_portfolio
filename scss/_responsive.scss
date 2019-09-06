@@ -111,7 +111,7 @@
    ++++++ Scrollbar ++++++
   */
   .scrollbar  {
-    bottom: 138px!important;
+    bottom: 163px!important;
     right: -5px!important;
     &::before {
       width: 80px!important;
@@ -137,7 +137,7 @@
     height: 100vh!important;
     .icons {
       left: 30px!important;
-      bottom: 15px!important;
+      bottom: 40px!important;
     }
   }
 
@@ -203,9 +203,6 @@
     .headings {
       top: 50%!important;
     }
-    // .highlight {
-    //   font-size: 3rem;
-    // }
     .content {
       width: 100%;
     }

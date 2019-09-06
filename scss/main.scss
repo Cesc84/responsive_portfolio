@@ -16,7 +16,7 @@
 */
 
 body {
-  background: darken($white, 25);
+  background: rgba($secondary-color, .1);
   color: $white;
   font-family: $font-family;
   line-height: 1.5;
@@ -392,7 +392,7 @@ footer {
         font-size: 1rem!important;
       }
       &:first-child {
-        display: none;
+        display: none!important;
       }
     }
   }

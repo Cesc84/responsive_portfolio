@@ -41,48 +41,6 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   /* vertical header (right-left-animation) */
-//   $('.menu-btn').click(function(){
-//      $(".menu").animate({
-//        top: '+=80px'
-//      }, 400);
-//      $('.menu-nav-m').removeClass('show');
-//      $('.menu-nav-m').removeClass('show');
-//      // $(".menu-btn").fadeOut("fast");
-//    });
-//
-//    $('.close').click(function(){
-//      $(".menu").animate({
-//        top: '-=80px'
-//      }, 400);
-//      // $(".menu-btn").fadeIn("fast");
-//    });
-// });
-
-/* SHRINK HEADER */
-/*
-   on mobile screen(< 768px) the header position is fixed,
-   on larger screen the header disappear after
-   scrolling the page
-*/
-// window.onscroll = function() {shrinkHeader()};
-//
-// function shrinkHeader() {
-// var width = $(window).width();
-// var menu = document.querySelector(".menu");
-//
-//   if (width < 768) {
-//     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-//         menu.addClass = "test";
-//     } else {
-//         menu.className = "";
-//     }
-//   } else {
-//     menu.className = "";
-//     // document.querySelector(".cross").className = "disappear";
-//   }
-// }
 
 /* SHRINK HEADER */
 window.onscroll = function() {
