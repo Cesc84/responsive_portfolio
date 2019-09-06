@@ -45,7 +45,8 @@
   left: 0;
   max-width: 1280px;
   width: 100%;
-  opacity: 0.9;
+  background: $primary-color;
+  opacity: .9;
   @include easeInOut;
   ul {
     position: absolute;

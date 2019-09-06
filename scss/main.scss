@@ -16,16 +16,17 @@
 */
 
 body {
-  background: $white;
+  background: darken($white, 25);
   color: $white;
   font-family: $font-family;
   line-height: 1.5;
   letter-spacing: 1.8px;
-  // max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   .container {
+    background: $primary-color;
     position: relative;
-    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
   }
 }
@@ -39,9 +40,9 @@ header {
 section, footer {
   position: relative;
   width: 100%;
-  &.bio { background: $grey; }
-  &.white { background: $white; }
-  &.purple { background: $primary-color; }
+  // &.bio,
+  // &.white,
+  // &.purple  { background: $primary-color; }
   height: 700px;
 }
 
@@ -108,11 +109,11 @@ ul {
 	 text-align: center;
 	 padding: 8px 40px;
 	 border-radius: 25px;
-   background: $grey;
+   background: $secondary-color;
    color: $white;
    cursor: pointer;
 	 &:hover {
-     background: lighten($grey, 6);
+     background: darken($secondary-color, 6);
      color: $white;
    }
  }
@@ -126,9 +127,9 @@ ul {
 */
 .scrollbar {
   position: absolute;
-  top: 620px;
+  bottom: 58px;
   right: 0;
-  // z-index: 1051;
+  z-index: 1051;
   font-weight: 300;
   font-size: .7rem;
   color: $white;
@@ -161,7 +162,7 @@ main {
     left: 0;
   }
   .fullscreen-bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -196,7 +197,8 @@ main {
 #hero {
   // @include background();
   position: relative;
-  // background: url('../img/mj.jpg');
+  height: 100vh;
+  // background: url('../img/mj3.jpg');
   // background-size: cover;
   // background-position: center;
   // &:after {
@@ -205,10 +207,10 @@ main {
   //   top: 0;
   //   left: 0;
   //   width: 100%;
-  //   height: 600px;
+  //   height: 100vh;
   //   z-index: 10;
-  //   background: $grey;
-  //   opacity: 0.2;
+  //   background: $primary-color;
+  //   opacity: .4;
   // }
   .row {
     position: absolute;
@@ -240,7 +242,7 @@ main {
 */
 .icons {
   position: absolute;
-  // z-index: 99;
+  z-index: 99;
   .item {
     padding-right: 1.5rem;
     a {
@@ -256,7 +258,6 @@ main {
  ++++++ Bio Section ++++++
 */
 .bio {
-  // border-top: 3px solid $secondary-color;
   height: auto;
   .portrait {
     position: relative;
@@ -270,7 +271,8 @@ main {
   }
   .content {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 4rem;
+    padding-right: 3rem;
   }
 }
 
@@ -321,6 +323,13 @@ footer {
     .wrapper {
       top: 40%;
       width: 500px;
+      h2 {
+        color: $white;
+        padding-bottom: 3rem;
+        &:after {
+          display: none;
+        }
+      }
     }
     .icons {
       bottom: 120px;
@@ -342,14 +351,14 @@ footer {
   	.copyright {
   		bottom: 12px;
       width: 100%;
+      color: $white;
   		#terms {
   			font-size: .7em;
-  			color: $grey;
   			border: none;
   			text-transform: capitalize;
   			text-decoration: underline;
   			&:hover {
-  				background: $white;
+  				// background: $white;
   				color: darken($secondary-color, 5);
         }
       }

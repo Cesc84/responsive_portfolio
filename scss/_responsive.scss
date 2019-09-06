@@ -75,11 +75,11 @@
     opacity: 1;
   }
   .menu {
-    background: darken($primary-color, 6);
+    // background: darken($primary-color, 8);
     top: 0;
     right: 0;
-    height: 600px;
-    transform: translate(-50%, -50%) translate3d(100%, -100%, 0);
+    height: 100vh;
+    transform: translate(-50%, -50%) translate3d(150%, 50%, 0);
     &.show {
       transform: translate3d(0, 0, 0);
     }
@@ -92,7 +92,7 @@
         display: block;
         padding: 0;
         padding-bottom: 1.5rem;
-        transform: translate3d(100%, -100%, 0);
+        transform: translate3d(50%, 0, 0);
         &:first-child {
           padding-right: 0;
           padding-bottom: 6rem;
@@ -102,7 +102,7 @@
           transform: translate3d(0, 0, 0);
         }
         .nav-link {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -111,7 +111,7 @@
    ++++++ Scrollbar ++++++
   */
   .scrollbar  {
-    top: 442px!important;
+    bottom: 138px!important;
     right: -5px!important;
     &::before {
       width: 80px!important;
@@ -134,7 +134,7 @@
   }
 
   #hero {
-    height: 600px!important;
+    height: 100vh!important;
     .icons {
       left: 30px!important;
       bottom: 15px!important;
@@ -153,7 +153,6 @@
 
   .bio {
     .content {
-      padding-left: 1.5rem!important;
       padding-top: 5rem!important;
     }
   }
