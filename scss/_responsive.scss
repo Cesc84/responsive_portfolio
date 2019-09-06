@@ -162,7 +162,8 @@
 
   .bio {
     .content {
-      padding-top: 5rem!important;
+      padding-top: 3rem!important;
+      padding-right: 2rem!important;
     }
   }
 
@@ -175,7 +176,7 @@
     }
   }
   .purple {
-    height: 600px!important;
+    height: 440px!important;
   }
 }
 
@@ -232,7 +233,7 @@
     .large-6 {
       height: auto;
       .content {
-        padding: 0;
+          padding: 3rem 0 1rem 0!important;
       }
     }
   }
@@ -257,7 +258,7 @@
   .purple {
     h2 {
       &:after {
-        bottom: 24px!important;
+        bottom: 2rem!important;
       }
     }
   }

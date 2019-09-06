@@ -43,7 +43,7 @@ section, footer {
   // &.bio,
   // &.white,
   // &.purple  { background: $primary-color; }
-  height: 700px;
+  height: 600px;
 }
 
 .row {
@@ -295,6 +295,7 @@ main {
   }
 }
 .purple {
+  height: 500px;
   h2 {
     position: relative;
   }
@@ -318,6 +319,7 @@ main {
 */
 footer {
   position: relative;
+  height: 700px;
 	&.white {
 		text-align: center;
     .wrapper {
