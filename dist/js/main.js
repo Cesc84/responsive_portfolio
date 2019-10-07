@@ -65,6 +65,72 @@ function scrollFunction() {
   }
 }
 
+/*
+ function to show the banner once the user
+ click one card of the first row and 3 cards of the second row
+*/
+$(document).ready(function(){
+
+  /*
+  *** first row - function to select the developer side ***
+  */
+  var $side = $('.side .thumb'),
+  $tech = $('.tech .thumb');
+  // side card
+  $side.click( function(){
+    $this = $(this);
+    $side.removeClass('selected');
+    $this.addClass('selected');
+
+    // check if we can show footer
+    popupFooter();
+});
+
+// Tech cards
+$tech.click( function(){
+  $this = $(this);
+
+  if( $this.hasClass('selected') ) {
+    $this.removeClass('selected');
+    console.log('Was selected before. Set it unselected.');
+    console.log('We have less than 3 features selected');
+  } else {
+    if( $('.features .card.selected').length <3 ) {
+      $(this).addClass('selected');
+      console.log('We have 3 cards selected');
+    } else {
+      // do nothing as 3 cards selected
+      console.log('We have 3 cards selected yet');
+    }
+  }
+
+  // check if we can show footer
+  popupFooter();
+
+});
+
+function popupFooter() {
+
+  if( $('.side .thumb.selected').length && $('.tech .thumb.selected').length === 3 ) {
+    $('#pop-up').css('display', 'block');
+    console.log('Footer info ON');
+  } else {
+    $('#pop-up').css('display', 'none');
+    console.log('Footer info OFF');
+  }
+}
+
+
+});
+
+
+
+// document.getElementsByClassName('thumb').onclick = function() {myFunction()};
+
+// function myFunction() {
+//   document.querySelectorAll('thumb').addClass(selected);
+// }
+
 //
 // var data = {
 //   "thumb": [{
