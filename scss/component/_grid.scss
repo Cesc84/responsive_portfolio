@@ -1,29 +1,34 @@
 /*
  ++++++ Grid ++++++
 */
-#grid {
+.grid {
   background: $primary-color;
   height: auto;
   .row {
-    padding-top: 40px;
+    // padding-top: 40px;
     // a {
     //   &:hover {
     //     color: $secondary-color;
     //   }
     // }
+    h2 {
+      color: white;
+      text-align: center;
+    }
     .thumb {
       display: block;
       position: relative;
       float: left;
       width: calc(100% / 3 - 20px);
-      margin: 20px 10px 0 10px;
+      margin: 0 10px 20px 10px;
+      background: $primary-color;
       color: $white;
       border: 2px solid $primary-color;
       overflow: hidden;
       cursor: pointer;
       .thumb-image {
         width: 100%;
-        height: 220px;
+        height: 180px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -31,7 +36,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          background: rgba($primary-color, 0.6);
+          background: rgba($primary-color, 0.8);
           // opacity: 0;
           @include easeInOut;
           .info-wrapper {
@@ -61,7 +66,8 @@
           }
         }
       }
-      &:hover {
+      &:hover,
+      &:active {
         border: 2px solid $secondary-color;
         // .thumb-info {
         //   opacity: 1;
@@ -75,13 +81,13 @@
         }
       }
     }
-    .side {
-      .thumb-image {
-        height: 120px;
-        h3 {
-          padding-bottom: 0!important;
-        }
-      }
-    }
+    // .side {
+    //   .thumb-image {
+    //     height: 120px;
+    //     h3 {
+    //       padding-bottom: 0!important;
+    //     }
+    //   }
+    // }
   }
 }
