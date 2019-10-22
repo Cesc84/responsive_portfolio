@@ -124,7 +124,20 @@ function popupFooter() {
 });
 
 
+var typed = new Typed('.title', {
+  strings: ["Francesco D'Aloe'"],
+  typeSpeed: 30,
+  backDelay: 750,
+  loop: false, // loop on or off (true or false)
+  loopCount: false
+});
 
+var typed = new Typed('.subtitle', {
+  strings: ["Front-end Developer"],
+  typeSpeed: 30,
+  loop: false, // loop on or off (true or false)
+  loopCount: false
+});
 // document.getElementsByClassName('thumb').onclick = function() {myFunction()};
 
 // function myFunction() {
