@@ -1,10 +1,14 @@
 @import 'config';
 @import 'global/typography';
+@import 'pages/cv';
 @import 'component/menu';
 @import 'responsive';
 @import 'component/grid';
+@import 'component/cv-grid';
 @import 'component/popUp';
 @import 'component/form';
+@import 'component/skill-table';
+
 
 * {
   margin: 0;
@@ -342,9 +346,7 @@ footer {
         padding-right: 0!important;
       }
       a {
-        // display: block;
         color: $secondary-color;
-        font-size: 1.2rem;
         @include easeInOut;
         &:hover {
           color: darken($secondary-color, 5);
@@ -352,7 +354,7 @@ footer {
       }
     }
   	.copyright {
-  		bottom: 12px;
+  		bottom: 3rem;
       width: 100%;
       color: $white;
   		#terms {

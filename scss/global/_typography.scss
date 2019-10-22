@@ -44,7 +44,9 @@ h3 {
     bottom: 0;
   }
 }
-
+h4 {
+  font-size: 1.2rem;
+}
 h5, p, a {
   font-family: $font-family;
 }
@@ -53,6 +55,9 @@ h5 {
   font-size: .8rem;
 }
 
+h6 {
+  font-size: 1rem!important;
+}
 p {
   font-size: .9rem;
   padding-bottom: 2rem;

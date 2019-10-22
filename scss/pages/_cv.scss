@@ -1,0 +1,70 @@
+/*
+ ++++++ CV PAGE ++++++
+*/
+
+.cv {
+  padding: 60px 120px;
+  .scrollbar, .icons {
+    display: none;
+  }
+  #hero {
+    height: auto;
+    display: block;
+    h2, h3, h4 {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  h2, h3, h4, p, a {
+    font-weight: 400;
+  }
+  h2 {
+    padding-bottom: 3rem!important;
+    font-weight: normal;
+  }
+  h2, h3, h4 {
+    padding-bottom: 1rem;
+    &::after {
+      display: none;
+    }
+  }
+  p {
+    font-family: $font-family-titles;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  header {
+    width: 100%;
+    .logo {
+      position: absolute;
+      right: 320px;
+      top: 30px;
+    }
+  }
+  section {
+    display: block;
+    height: auto;
+    .row {
+      padding: 0 80px;
+      // cv page
+      .creds {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $secondary-color;
+      }
+      .text-padding {
+        padding-right: 5vh!important;
+        padding-left: 5vh!important;
+      }
+      .cv-section {
+        padding: 3rem 0;
+        border-bottom: 1px solid $secondary-color;
+        // height: auto;
+      }
+      .languages {
+        border-top: 1px solid $secondary-color;
+      }
+    }
+  }
+
+}

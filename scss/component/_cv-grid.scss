@@ -1,0 +1,77 @@
+/*
+ ++++++ Cv-Grid ++++++
+*/
+.cv {
+  .grid {
+      // display: none;
+    width: 100%;
+    // margin-top: 3rem;
+    .row {
+      position: relative;
+      padding: 3rem 0!important;
+      h3 {
+        text-align: center;
+      }
+      h6 {
+        text-transform: uppercase;
+        padding-bottom: 0;
+        color: $secondary-color!important;
+      }
+      .side {
+        .cv-thumb {
+          width: calc(100% / 3 - 6px);
+        }
+      }
+      .side, .tech {
+        margin-top: 19px!important;
+        position: relative;
+      }
+      .cv-thumb {
+        display: block;
+        position: relative;
+        float: left;
+        height: 80px;
+        width: calc(100% / 6 - 6px);
+        margin: 0 3px 6px 3px;
+        .cv-thumb-image {
+          width: 100%;
+          height: 76px;
+          .cv-thumb-info {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #3D3B3B;
+            opacity: .8;
+            @include easeInOut;
+            .info-wrapper {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 90%;
+              text-align: center;
+              h3 {
+                padding-bottom: 10px;
+                &::after {
+                  display: none;
+                }
+              }
+              p {
+                font-size: .8rem;
+              }
+            }
+          }
+        }
+        &:hover,
+        &.selected {
+          border: 2px solid $secondary-color;
+          // box-shadow: 0px 0px 6px $secondary-color;
+          background: #6E6D6D;
+        }
+      }
+    }
+    .negative-top {
+      margin-top: -4rem;
+    }
+  }
+}
