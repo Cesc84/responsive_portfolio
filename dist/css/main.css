@@ -22,6 +22,7 @@ h1 {
   padding-bottom: 1.5rem;
   font-weight: 400; }
   h1:after {
+    top: 38%;
     bottom: 12px; }
 
 h2 {
@@ -213,6 +214,7 @@ a {
     font-size: 2.8rem;
     padding-bottom: 2.5rem !important; }
     h1:after {
+      top: 34%;
       bottom: 20px !important; }
   h2 {
     font-size: 1.7rem; }
@@ -951,6 +953,9 @@ footer {
         font-size: 1rem !important; }
       .mobile-shrink ul li:first-child {
         display: none !important; }
+
+.typed-cursor {
+  opacity: 0 !important; }
 
 .selected {
   border: 2px solid #ac8e56 !important; }

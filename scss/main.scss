@@ -412,7 +412,10 @@ footer {
     }
   }
 }
-
+// typed class
+.typed-cursor {
+  opacity: 0!important;
+}
 
 .selected {
   border: 2px solid $secondary-color!important;
