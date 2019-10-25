@@ -32,6 +32,7 @@ function toggleMenu() {
   }
 }
 
+
 $(document).ready(function () {
 /* SCROLLDOWN FUNCTION */
   $('.scrollbar').click(function() {
@@ -119,11 +120,15 @@ function popupFooter() {
     console.log('Footer info OFF');
   }
 }
+});
 
-
+/* CV page - Close PopUp */
+$('.cv .close').click(function() {
+    $('#pop-up').hide();
 });
 
 
+/* TYPED - Title typed */
 var typed = new Typed('.title', {
   strings: ["Francesco D'Aloe'"],
   typeSpeed: 30,

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <title>Portfolio - FD</title>
 </head>
 
@@ -52,14 +53,18 @@
       <section id="hero">
         <div class="row">
           <div class="headings">
-            <h1 data-aos="fade-up" data-aos-duration="1200">Francesco <span class="highlight"> D</span>'Aloe'</h1>
-            <h2 data-aos="fade-up" data-aos-duration="1200">Front End <span class="highlight"> D</span>eveloper</h2>
+            <h1 class="name"></h1>
+            <h2 class="subtitle"></h2>
+
+            <h2 class="element"></h2>
+            <!-- <h1 data-aos="fade-up" data-aos-duration="1200">Francesco <span class="highlight"> D</span>'Aloe'</h1>
+            <h2 data-aos="fade-up" data-aos-duration="1200">Front End <span class="highlight"> D</span>eveloper</h2> -->
           </div>
           <ul class="icons">
             <li class="item"><a href="https://www.facebook.com/stile.stilo.7" title="Facebook">Fb</a></li>
             <li class="item"><a href="https://www.instagram.com/francesco_daloe/" title="Instagram">In</a></li>
             <li class="item"><a href="https://www.linkedin.com/in/francesco-d-alo%C3%A8-268236101/" title="Linkedin">Li</a></li>
-            <li class="item"><a href="https://github.com/Cesc84" title="Github">Gh</a></li>
+            <li class="item"><a href="https://github.com/Cesc84" title="Github">Git</a></li>
           </ul>
         </div>
         <!-- scrolldown -->
@@ -74,7 +79,7 @@
           <h2 data-aos="fade-up" data-aos-duration="1200">Take a look at my works</h2>
           <!-- <div class="side"> -->
           <a class='thumb' onclick="myFunction()">
-            <div class='thumb-image' style='background-image: url("img/html.png");' data-aos='fade-up' data-aos-duration='1200'>
+            <div class='thumb-image' style='background-image: url("img/stilearredo.png");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Stilearredo</h3>
@@ -85,7 +90,7 @@
             </div>
           </a>
           <a class='thumb' onclick="myFunction()">
-            <div class='thumb-image' style='background-image: url("img/css3.png");' data-aos='fade-up' data-aos-duration='1200'>
+            <div class='thumb-image' style='background-image: url("img/em-trends.png");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Source Global Research Newsletter</h3>
@@ -96,7 +101,7 @@
             </div>
           </a>
           <a class='thumb' onclick="myFunction()">
-            <div class='thumb-image' style='background-image: url("img/sass.jpg");' data-aos='fade-up' data-aos-duration='1200'>
+            <div class='thumb-image' style='background-image: url("img/thumb-one.jpeg");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Aspinal Of London</h3>
@@ -107,7 +112,7 @@
             </div>
           </a>
           <a class='thumb' onclick="myFunction()">
-            <div class='thumb-image' style='background-image: url("img/html.png");' data-aos='fade-up' data-aos-duration='1200'>
+            <div class='thumb-image' style='background-image: url("img/thumb-two.jpeg");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Positively Putney</h3>
@@ -118,7 +123,7 @@
             </div>
           </a>
           <a class='thumb' onclick="myFunction()">
-            <div class='thumb-image' style='background-image: url("img/css3.png");' data-aos='fade-up' data-aos-duration='1200'>
+            <div class='thumb-image' style='background-image: url("img/thumb-three.jpeg");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Peacocks</h3>
@@ -129,7 +134,7 @@
             </div>
           </a>
           <a class='thumb' onclick="myFunction()">
-            <div class='thumb-image' style='background-image: url("img/sass.jpg");' data-aos='fade-up' data-aos-duration='1200'>
+            <div class='thumb-image' style='background-image: url("img/thumb-four.jpeg");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Game</h3>
@@ -204,6 +209,29 @@
 
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/typed.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.name', {
+      strings: ["Francesco D'Aloe'"],
+      typeSpeed: 35
+    });
+
+    var typed = new Typed('.subtitle', {
+      strings: ["Front-End Developer"],
+      typeSpeed: 35
+    });
+
+    // setTimeout(function() {
+    //   $(".element").typed({
+    //     strings: ["First sentence.", "Second sentence."],
+    //     typeSpeed: 30, // typing speed
+    //     backDelay: 750, // pause before backspacing
+    //     loop: false, // loop on or off (true or false)
+    //     loopCount: false, // number of loops, false = infinite
+    //     callback: function() {} // call function after typing is done
+    //   });
+    // }, 0);
+  </script>
   <script>
     AOS.init();
   </script>
