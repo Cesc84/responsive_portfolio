@@ -115,6 +115,10 @@ a {
       .cv section .row .languages {
         border-top: 1px solid #ac8e56; }
 
+#main {
+  height: 100vh;
+  padding-top: 6rem; }
+
 /*
  ** MENU
  */
@@ -538,6 +542,11 @@ a {
         background: #6E6D6D; }
   .cv .grid .negative-top {
     margin-top: -4rem; }
+
+.grid .thumb {
+  width: calc(100% / 2 - 20px) !important; }
+  .grid .thumb .thumb-image {
+    height: 500px !important; }
 
 #pop-up {
   position: absolute;
