@@ -546,6 +546,13 @@ a {
 .nl .grid .thumb .thumb-image {
   height: 600px;
   background-position: top; }
+  .nl .grid .thumb .thumb-image .thumb-info {
+    background: rgba(26, 26, 26, 0.8); }
+    .nl .grid .thumb .thumb-image .thumb-info .info-wrapper h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem; }
+    .nl .grid .thumb .thumb-image .thumb-info .info-wrapper p {
+      font-size: 1rem; }
 
 .nl .grid .thumb:hover .thumb-info {
   opacity: 0; }

@@ -5,6 +5,19 @@
       .thumb-image {
         height: 600px;
         background-position: top;
+        .thumb-info {
+          background: rgba($primary-color, 0.8);
+          .info-wrapper {
+            // width: 80%!important;
+            h3 {
+              font-size: 1.8rem;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
       }
       &:hover {
         .thumb-info {
