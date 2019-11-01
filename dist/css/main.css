@@ -115,7 +115,7 @@ a {
       .cv section .row .languages {
         border-top: 1px solid #ac8e56; }
 
-#main {
+.nl #main {
   height: 100vh;
   padding-top: 6rem; }
 
@@ -543,10 +543,34 @@ a {
   .cv .grid .negative-top {
     margin-top: -4rem; }
 
-.grid .thumb {
-  width: calc(100% / 2 - 20px) !important; }
-  .grid .thumb .thumb-image {
-    height: 500px !important; }
+.nl .grid .thumb .thumb-image {
+  height: 600px;
+  background-position: top; }
+
+.nl .grid .thumb:hover .thumb-info {
+  opacity: 0; }
+
+.nl .grid .thumb:hover .more {
+  bottom: 30px !important;
+  opacity: 1 !important; }
+
+.nl .grid .thumb .more {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.3s ease-in-out 0.2s;
+  opacity: 0;
+  background: #ac8e56;
+  color: #FFFFFF;
+  padding: .5rem 2rem;
+  border-radius: 30px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out !important; }
+  .nl .grid .thumb .more:hover {
+    background: #997d4b; }
 
 #pop-up {
   position: absolute;
