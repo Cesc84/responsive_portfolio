@@ -20,28 +20,11 @@
         }
       }
       &:hover {
-        .thumb-info {
-          opacity: 0;
-        }
-        .more {
-          bottom: 30px!important;
-          opacity: 1!important;
-        }
-      }
-      .more {
-        position: absolute;
-        bottom: -50px;
-        left: 50%;
-        transform: translate(-50%);
-        transition: all 0.3s ease-in-out 0.2s;
-        opacity: 0;
-        background: $secondary-color;
-        color: $white;
-        padding: .5rem 2rem;
-        border-radius: 30px;
-        @include easeInOut;
-        &:hover {
-          background: darken($secondary-color, 6);
+        // .thumb-info {
+        //   opacity: 0;
+        // }
+        .discover {
+          bottom: 50px!important;
         }
       }
     }

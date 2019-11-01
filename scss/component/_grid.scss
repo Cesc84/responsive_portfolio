@@ -56,27 +56,32 @@
               font-size: .8rem;
             }
           }
-          .details {
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-            transform: translate(-50%);
-            transition: all 0.3s ease-in-out 0.2s;
-            opacity: 0;
-          }
+        }
+        .discover {
+          position: absolute;
+          bottom: -50px;
+          left: 50%;
+          transform: translate(-50%);
+          transition: all 0.3s ease-in-out 0.2s;
+          opacity: 0;
+          background: $secondary-color;
+          color: $white;
+          padding: 6px 24px;
+          border-radius: 30px;
+          @include easeInOut;
         }
       }
       &:hover,
       &:active {
         border: 2px solid $secondary-color;
-        // .thumb-info {
-        //   opacity: 1;
-        // }
-        .details {
-          bottom: 30px!important;
+        .thumb-info {
+          opacity: 0;
+        }
+        .discover {
+          bottom: 25px!important;
           opacity: 1!important;
           &:hover {
-            color: $secondary-color;
+            background: darken($secondary-color, 6);
           }
         }
       }

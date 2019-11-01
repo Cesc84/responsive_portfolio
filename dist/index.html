@@ -32,10 +32,10 @@
         </div> -->
         <!-- Mobile Menu -->
         <ul class="menu-nav">
-          <li class="nav-item item"><a href="#home" class="nav-link"><span class="highlight">Logo</span></a></li>
-          <li class="nav-item item"><a href="#work" class="nav-link">Work</a></li>
-          <li class="nav-item item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item item"><a href="#" class="nav-link"><span class="highlight">Logo</span></a></li>
+          <li class="nav-item item work"><a href="#" class="nav-link">Work</a></li>
+          <li class="nav-item item about"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item item contact"><a href="#" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -74,30 +74,30 @@
       </section>
 
       <!-- Grid Section -->
-      <section id="work" class="grid white">
+      <section class="grid white">
         <div class="row">
           <h2 data-aos="fade-up" data-aos-duration="1200">Take a look at my works</h2>
           <!-- <div class="side"> -->
-          <a class='thumb' onclick="myFunction()" href="http://www.stile-arredo.it/" target="_blank" title="stilearredo.it">
+          <a class='thumb' onclick="myFunction()" href="http://www.stile-arredo.it/" target="_blank">
             <div class='thumb-image' style='background-image: url("img/stilearredo.png");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Stilearredo</h3>
                   <p>Just some dummy content, lorem ipsum content to be replaced.</p>
                 </div>
-                <h5 class='details'>See Details</h5>
               </span>
+              <h5 class='discover'>See Details</h5>
             </div>
           </a>
-          <a class='thumb' onclick="myFunction()" href="https://reports.sourceglobalresearch.com/emerging-trends" target="_blank" title="sourceglobalresearch.com/emerging-trends">
+          <a class='thumb' onclick="myFunction()" href="https://reports.sourceglobalresearch.com/emerging-trends" target="_blank">
             <div class='thumb-image' style='background-image: url("img/em-trends.png");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Source Emerging Trends</h3>
                   <p>Just some dummy content, lorem ipsum content to be replaced.</p>
                 </div>
-                <h5 class='details'>See Details</h5>
               </span>
+              <h5 class='discover'>See Details</h5>
             </div>
           </a>
           <a class='thumb' onclick="myFunction()" href="nl.html">
@@ -107,41 +107,41 @@
                   <h3>Emails</h3>
                   <p>We'll take your measurements and walk you through all.</p>
                 </div>
-                <h5 class='details'>See Details</h5>
               </span>
+              <h5 class='discover'>See Details</h5>
             </div>
           </a>
-          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/zeek/LP/zeek-lp-v1/index2.html" target="_blank" title="zeek lp">
+          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/zeek/LP/zeek-lp-v1/index2.html" target="_blank">
             <div class='thumb-image' style='background-image: url("img/zeek.png");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Zeek Choice</h3>
                   <p>Just some dummy content, lorem ipsum content to be replaced.</p>
                 </div>
-                <h5 class='details'>See Details</h5>
               </span>
+              <h5 class='discover'>See Details</h5>
             </div>
           </a>
-          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/aspinaloflondon/dyn-ban-with-price/" target="_blank" title="aspinaloflondon">
+          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/aspinaloflondon/dyn-ban-with-price/" target="_blank">
             <div class='thumb-image' style='background-image: url("img/aspinal-of-london.png");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Aspinal of London</h3>
                   <p>HTML5 Dynamic banners, lorem ipsum content to be replaced </p>
                 </div>
-                <h5 class='details'>See Details</h5>
               </span>
+              <h5 class='discover'>See Details</h5>
             </div>
           </a>
-          <a class='thumb' onclick="myFunction()" href="https://www.sourceglobalresearch.com/the-future-of-the-firm/" target="_blank" title="sourceglobalresearch.com/the-future-of-the-firm">
+          <a class='thumb' onclick="myFunction()" href="https://www.sourceglobalresearch.com/the-future-of-the-firm/" target="_blank">
             <div class='thumb-image' style='background-image: url("img/thumb-four.jpeg");' data-aos='fade-up' data-aos-duration='1200'>
               <span class='thumb-info'>
                 <div class='info-wrapper'>
                   <h3>Source Global Research</h3>
                   <p>We'll take your measurements and walk you through all.</p>
                 </div>
-                <h5 class='details'>See Details</h5>
               </span>
+              <h5 class='discover'>See Details</h5>
             </div>
           </a>
           <!-- </div> -->
@@ -150,7 +150,7 @@
       <!-- End Grid Section -->
 
       <!-- About Section -->
-      <section id="about" class="bio">
+      <section class="bio">
         <div class="row">
           <div class="columns large-6">
             <article class="content">
@@ -178,7 +178,7 @@
       </section> -->
 
       <!-- FOOTER -->
-      <footer id="contact" class="white">
+      <footer class="white">
         <div class="row">
           <div class="wrapper">
             <h2 data-aos="fade-up" data-aos-duration="1200">How To Reach Me</h2>
@@ -231,6 +231,32 @@
     //     callback: function() {} // call function after typing is done
     //   });
     // }, 0);
+
+    /*
+     Animated effect to scroll the sections up and down
+    */
+    $(document).ready(function() {
+      $('li.work').click(function() {
+          $('html, body').animate({
+            scrollTop: $("section.grid").offset().top
+          }, 1000)
+        }),
+        $('li.about').click(function() {
+          $('html, body').animate({
+            scrollTop: $("section.bio").offset().top
+          }, 1000)
+        }),
+        $('li.contact').click(function() {
+          $('html, body').animate({
+            scrollTop: $("footer.white").offset().top
+          }, 1000)
+        })
+      $('span.highlight').click(function() {
+        $('html, body').animate({
+          scrollTop: $("section#hero").offset().top
+        }, 1000)
+      })
+    });
   </script>
   <script>
     AOS.init();

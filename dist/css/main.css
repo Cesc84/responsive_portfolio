@@ -325,7 +325,14 @@ a {
         padding-left: 0 !important;
         padding-right: 0 !important; }
   .tech .cv-thumb {
-    width: calc(100% / 4 - 6px) !important; } }
+    width: calc(100% / 4 - 6px) !important; }
+  .nl .thumb-image {
+    height: 360px !important; }
+    .nl .thumb-image .info-wrapper h3 {
+      font-size: 1.4rem !important;
+      margin-bottom: 0 !important; }
+    .nl .thumb-image .info-wrapper p {
+      font-size: 0.9rem !important; } }
 
 /*
 ** Smarthphone
@@ -470,20 +477,30 @@ a {
               display: none; }
           .grid .row .thumb .thumb-image .thumb-info .info-wrapper p {
             font-size: .8rem; }
-        .grid .row .thumb .thumb-image .thumb-info .details {
-          position: absolute;
-          bottom: -50px;
-          left: 50%;
-          transform: translate(-50%);
-          transition: all 0.3s ease-in-out 0.2s;
-          opacity: 0; }
+      .grid .row .thumb .thumb-image .discover {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%);
+        transition: all 0.3s ease-in-out 0.2s;
+        opacity: 0;
+        background: #ac8e56;
+        color: #FFFFFF;
+        padding: 6px 24px;
+        border-radius: 30px;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out !important; }
     .grid .row .thumb:hover, .grid .row .thumb:active {
       border: 2px solid #ac8e56; }
-      .grid .row .thumb:hover .details, .grid .row .thumb:active .details {
-        bottom: 30px !important;
+      .grid .row .thumb:hover .thumb-info, .grid .row .thumb:active .thumb-info {
+        opacity: 0; }
+      .grid .row .thumb:hover .discover, .grid .row .thumb:active .discover {
+        bottom: 25px !important;
         opacity: 1 !important; }
-        .grid .row .thumb:hover .details:hover, .grid .row .thumb:active .details:hover {
-          color: #ac8e56; }
+        .grid .row .thumb:hover .discover:hover, .grid .row .thumb:active .discover:hover {
+          background: #997d4b; }
 
 /*
  ++++++ Cv-Grid ++++++
@@ -554,30 +571,8 @@ a {
     .nl .grid .thumb .thumb-image .thumb-info .info-wrapper p {
       font-size: 1rem; }
 
-.nl .grid .thumb:hover .thumb-info {
-  opacity: 0; }
-
-.nl .grid .thumb:hover .more {
-  bottom: 30px !important;
-  opacity: 1 !important; }
-
-.nl .grid .thumb .more {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translate(-50%);
-  transition: all 0.3s ease-in-out 0.2s;
-  opacity: 0;
-  background: #ac8e56;
-  color: #FFFFFF;
-  padding: .5rem 2rem;
-  border-radius: 30px;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out !important; }
-  .nl .grid .thumb .more:hover {
-    background: #997d4b; }
+.nl .grid .thumb:hover .discover {
+  bottom: 50px !important; }
 
 #pop-up {
   position: absolute;

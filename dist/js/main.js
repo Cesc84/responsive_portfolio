@@ -121,11 +121,14 @@ function popupFooter() {
   }
 }
 });
-
 /* CV page - Close PopUp */
-$('.cv .close').click(function() {
+function resetGrid() {
+  $('.cv .close').click(function() {
+    $('.cv-thumb.selected').removeClass('selected');
     $('#pop-up').hide();
-});
+  });
+}
+resetGrid();
 
 
 /* TYPED - Title typed */
@@ -143,51 +146,3 @@ var typed = new Typed('.subtitle', {
   loop: false, // loop on or off (true or false)
   loopCount: false
 });
-// document.getElementsByClassName('thumb').onclick = function() {myFunction()};
-
-// function myFunction() {
-//   document.querySelectorAll('thumb').addClass(selected);
-// }
-
-//
-// var data = {
-//   "thumb": [{
-//       "image": "img/thumb-one.jpeg",
-//       "title": "Holiday",
-//       "description": "Just some dummy content, lorem ipsum content to be replaced."
-//     },
-//     {
-//       "image": "img/thumb-five.jpeg",
-//       "title": "Keep in Mind",
-//       "description": "We'll take your measurements and walk you through all your suiting options."
-//     },
-//     {
-//       "image": "img/thumb-three.jpeg",
-//       "title": "Peace and Love",
-//       "description": "Just some dummy content, lorem ipsum content to be replaced."
-//     },
-//     {
-//       "image": "img/thumb-four.jpeg",
-//       "title": "No Fear",
-//       "description": "We'll take your measurements and walk you through all your suiting options."
-//     },
-//     {
-//       "image": "img/thumb-five.jpeg",
-//       "title": "More Holiday",
-//       "description": "Just some dummy content, lorem ipsum content to be replaced."
-//     },
-//     {
-//       "image": "img/thumb-six.jpeg",
-//       "title": "Yoga Time",
-//       "description": "We'll take your measurements and walk you through all your suiting options."
-//     }
-//   ]
-// }
-// // $(function() {
-// //    var thumbs = [];
-// //    $.getJSON('config.json', function(data) {
-// $.each(data.thumb, function(i, f) {
-//   var gridRow = "<a href='#' class='thumb'><div class='thumb-image' style='background-image: url(" + f.image + ");' data-aos='fade-up' data-aos-duration='1200'><span class='thumb-info'><div class='info-wrapper'><h3>" + f.title + "</h3><p>" +
-//     f.description + "</p></div><h5 class='details'>See Details</h5></span></div></a>"
-//   $(gridRow).appendTo("#grid .row");
-// });

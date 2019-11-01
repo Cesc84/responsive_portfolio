@@ -248,6 +248,21 @@
       width: calc(100% / 4 - 6px)!important;
     }
   }
+  .nl {
+    .thumb-image {
+      height: 360px!important;
+      .info-wrapper {
+      // width: 80%!important;
+        h3 {
+          font-size: 1.4rem!important;
+          margin-bottom: 0!important;
+        }
+        p {
+          font-size: .9rem!important;
+        }
+      }
+    }
+  }
 }
 
 /*
