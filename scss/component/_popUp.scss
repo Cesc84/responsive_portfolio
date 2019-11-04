@@ -38,5 +38,8 @@
     &:hover {
       background: lighten($primary-color, 8);
     }
+    &:first-child {
+      margin-bottom: 1rem;
+    }
   }
 }
