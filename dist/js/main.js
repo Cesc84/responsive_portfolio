@@ -33,14 +33,14 @@ function toggleMenu() {
 }
 
 
-$(document).ready(function () {
-/* SCROLLDOWN FUNCTION */
-  $('.scrollbar').click(function() {
-      $([document.documentElement, document.body]).animate({
-          scrollTop: $('#about').offset().top
-      }, 400);
-  });
-});
+// $(document).ready(function () {
+// /* SCROLLDOWN FUNCTION */
+//   $('.scrollbar').click(function() {
+//       $([document.documentElement, document.body]).animate({
+//           scrollTop: $('#about').offset().top
+//       }, 400);
+//   });
+// });
 
 
 /* SHRINK HEADER */

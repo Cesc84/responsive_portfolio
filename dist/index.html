@@ -252,10 +252,15 @@
           }, 1000)
         })
       $('span.highlight').click(function() {
-        $('html, body').animate({
-          scrollTop: $("section#hero").offset().top
-        }, 1000)
-      })
+          $('html, body').animate({
+            scrollTop: $("section#hero").offset().top
+          }, 1000)
+        }),
+        $('a.scrollbar').click(function() {
+          $('html, body').animate({
+            scrollTop: $("section.grid").offset().top
+          }, 1000)
+        })
     });
   </script>
   <script>
