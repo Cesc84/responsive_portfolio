@@ -286,7 +286,6 @@ main {
 /*
  ++++++ Purple Section ++++++
 */
-.purple,
 .white {
   article,
   .wrapper,
@@ -301,19 +300,7 @@ main {
     top: 50%;
   }
 }
-.purple {
-  height: 500px;
-  h2 {
-    position: relative;
-  }
-  .content {
-    width: 75%;
-  }
-  .button {
-    margin-top: 1rem;
-    @include easeInOut;
-  }
-}
+
 /*
  ++++++ White Section ++++++
 */
