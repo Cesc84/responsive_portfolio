@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <title>Portfolio - FD</title>
+</head>
+
+<body>
+  <div class="container nl">
+
+    <!-- HEADER -->
+    <header>
+      <!-- 3 lines - menu icon -->
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <!-- <div class="menu-branding">
+          <div class="portrait"></div>
+        </div> -->
+        <!-- Mobile Menu -->
+        <ul class="menu-nav">
+          <li class="nav-item item"><a href="index.html" class="nav-link"><span class="highlight">Logo</span></a></li>
+          <li class="nav-item item"><a href="index.html" class="nav-link">Work</a></li>
+          <li class="nav-item item"><a href="index.html" class="nav-link">About</a></li>
+          <li class="nav-item item"><a href="index.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main">
+      <!-- <div class="fullscreen-bg">
+        <video loop muted autoplay poster="" class="fullscreen-bg__video">
+          <source src="video/video.webm" type="video/webm">
+          <source src="video/video.mp4" type="video/mp4">
+          <source src="video/video.ogv" type="video/ogv">
+        </video>
+      </div> -->
+      <!-- Hero Section -->
+
+      <!-- Grid Section -->
+      <section id="work" class="grid white">
+        <div class="row">
+          <h2 data-aos="fade-up" data-aos-duration="1200">Some of the email I built</h2>
+          <!-- <div class="side"> -->
+          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/source/newsletter2018/newsletter2.html" target="_blank">
+            <div class='thumb-image' style='background-image: url("img/source-nl.png");' data-aos='fade-up' data-aos-duration='1200'>
+              <span class='thumb-info'>
+                <div class='info-wrapper'>
+                  <h4>Source</h4>
+                  <p>We'll take your measurements and walk you through all.</p>
+                  <h5 class='discover'>Discover More</h5>
+                </div>
+              </span>
+            </div>
+          </a>
+          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/party-casino/email/index.html" target="_blank">
+            <div class='thumb-image' style='background-image: url("img/party-casino-nl.png");' data-aos='fade-up' data-aos-duration='1200'>
+              <span class='thumb-info'>
+                <div class='info-wrapper'>
+                  <h4>Party Casino Fun</h4>
+                  <p>This email has built instead using Foundation Zurb with its Inky template language.</p>
+                  <h5 class='discover'>Discover More</h5>
+                </div>
+              </span>
+            </div>
+          </a>
+          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/aspinaloflondon/dyn-ban-with-price/" target="_blank">
+            <div class='thumb-image' style='background-image: url("img/game-nl.png");' data-aos='fade-up' data-aos-duration='1200'>
+              <span class='thumb-info'>
+                <div class='info-wrapper'>
+                  <h4>GAME</h4>
+                  <p>HTML5 Dynamic banners, lorem ipsum content to be replaced </p>
+                  <h5 class='discover'>Discover More</h5>
+                </div>
+              </span>
+            </div>
+          </a>
+          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/aspinaloflondon/dyn-ban-with-price/" target="_blank">
+            <div class='thumb-image' style='background-image: url("img/thepools-nl.png");' data-aos='fade-up' data-aos-duration='1200'>
+              <span class='thumb-info'>
+                <div class='info-wrapper'>
+                  <h4>The Polls Football</h4>
+                  <p>HTML5 Dynamic banners, lorem ipsum content to be replaced </p>
+                  <h5 class='discover'>Discover More</h5>
+                </div>
+              </span>
+            </div>
+          </a>
+          <a class='thumb' onclick="myFunction()" href="http://clients.tomorrowtth.com/aspinaloflondon/dyn-ban-with-price/" target="_blank">
+            <div class='thumb-image' style='background-image: url("img/aspinal-of-london.png");' data-aos='fade-up' data-aos-duration='1200'>
+              <span class='thumb-info'>
+                <div class='info-wrapper'>
+                  <h4>Aspinal of London</h4>
+                  <p>HTML5 Dynamic banners, lorem ipsum content to be replaced </p>
+                  <h5 class='discover'>Discover More</h5>
+                </div>
+              </span>
+            </div>
+          </a>
+          <!-- </div> -->
+        </div>
+      </section>
+      <!-- End Grid Section -->
+
+
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/typed.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.name', {
+      strings: ["Francesco D'Aloe'"],
+      typeSpeed: 35
+    });
+
+    var typed = new Typed('.subtitle', {
+      strings: ["Front-End Developer"],
+      typeSpeed: 35
+    });
+
+    // setTimeout(function() {
+    //   $(".element").typed({
+    //     strings: ["First sentence.", "Second sentence."],
+    //     typeSpeed: 30, // typing speed
+    //     backDelay: 750, // pause before backspacing
+    //     loop: false, // loop on or off (true or false)
+    //     loopCount: false, // number of loops, false = infinite
+    //     callback: function() {} // call function after typing is done
+    //   });
+    // }, 0);
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
