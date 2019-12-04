@@ -5,9 +5,10 @@ const menuNav = document.querySelector('.menu-nav');
 // const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 const btnLineMenu = document.querySelector('.btn-line');
-
+const navLink = document.querySelector('.nav-link');
 // Set initiale state of menu
 let showMenu = false;
+
 
 menuBtn.addEventListener('click', toggleMenu);
 
@@ -20,6 +21,7 @@ function toggleMenu() {
     navItems.forEach(item => item.classList.add('show'));
     // Set Menu state
     showMenu = true;
+
   } else {
     menuBtn.classList.remove('close');
     menu.classList.remove('show');
@@ -31,7 +33,6 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
 
 // $(document).ready(function () {
 // /* SCROLLDOWN FUNCTION */

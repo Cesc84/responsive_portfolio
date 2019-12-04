@@ -185,7 +185,9 @@ a {
       font-size: 1.1rem !important; }
   .side,
   .tech {
-    margin-top: -20px !important; } }
+    margin-top: -20px !important; }
+  .thumb:hover .info-wrapper {
+    bottom: 0 !important; } }
 
 /*
  ** Desktops & Laptops
@@ -193,7 +195,7 @@ a {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .bio .content {
     padding-top: 3rem !important;
-    padding-left: 1rem !important;
+    padding-left: 0 !important;
     padding-right: 2rem !important; }
   .content {
     text-align: center;
@@ -221,9 +223,7 @@ a {
         padding: 0 !important; }
       .thumb .thumb-image .info-wrapper p,
       .thumb .thumb-image .info-wrapper .discover {
-        display: none !important; }
-  .thumb:hover .info-wrapper {
-    bottom: -355px !important; } }
+        display: none !important; } }
 
 .cv {
   padding: 4rem 0 !important; }
@@ -236,7 +236,7 @@ a {
     font-size: 2.8rem;
     padding-bottom: 2.5rem !important; }
     h1:after {
-      top: 27%;
+      top: 34%;
       bottom: 20px !important; }
   h2 {
     font-size: 1.7rem; }
@@ -282,6 +282,8 @@ a {
           color: #1a1a1a !important;
           font-size: 1.5rem;
           font-weight: 700 !important; }
+          .menu .menu-nav .nav-item .nav-link::after {
+            display: none; }
   /*
    ++++++ Scrollbar ++++++
   */
@@ -346,9 +348,12 @@ a {
       padding-top: 0 !important;
       bottom: -125px !important; }
       .thumb .thumb-image .info-wrapper h4 {
-        font-size: 1rem !important; }
-  .thumb:hover .info-wrapper {
-    bottom: -125px !important; } }
+        font-size: 1rem !important; } }
+
+@media only screen and (orientation: landscape) {
+  .bio .large-6 {
+    width: 50% !important;
+    float: left !important; } }
 
 /*
 ** Smarthphone
@@ -396,7 +401,7 @@ a {
     margin-right: 0 !important;
     margin-left: 0 !important; }
     .grid .row .thumb .thumb-image {
-      height: 160px !important; }
+      height: 200px !important; }
       .grid .row .thumb .thumb-image h3 {
         font-size: 1.4rem;
         padding-bottom: 0 !important; }
@@ -427,6 +432,10 @@ a {
     display: block;
     width: 100% !important;
     padding: 0 0 1rem 0 !important; }
+  .thumb .thumb-image {
+    height: 400px !important; }
+    .thumb .thumb-image .info-wrapper {
+      bottom: -165px !important; }
   .cv .grid .tech .cv-thumb {
     width: calc(100% / 3 - 6px) !important; }
   .cv h6 {
@@ -482,7 +491,7 @@ a {
           left: 50%;
           bottom: -200px;
           transform: translateX(-50%);
-          width: 100%;
+          width: 102%;
           height: 100%;
           background: rgba(26, 26, 26, 0.8);
           text-align: center;
@@ -511,12 +520,10 @@ a {
             transition: all 300ms ease-in-out !important; }
     .grid .row .thumb:hover, .grid .row .thumb:active {
       border: 2px solid #ac8e56; }
-      .grid .row .thumb:hover .info-wrapper, .grid .row .thumb:active .info-wrapper {
-        bottom: 0 !important; }
-        .grid .row .thumb:hover .info-wrapper .discover, .grid .row .thumb:active .info-wrapper .discover {
-          opacity: 1 !important; }
-          .grid .row .thumb:hover .info-wrapper .discover:hover, .grid .row .thumb:active .info-wrapper .discover:hover {
-            background: #997d4b; }
+      .grid .row .thumb:hover .info-wrapper .discover, .grid .row .thumb:active .info-wrapper .discover {
+        opacity: 1 !important; }
+        .grid .row .thumb:hover .info-wrapper .discover:hover, .grid .row .thumb:active .info-wrapper .discover:hover {
+          background: #997d4b; }
 
 /*
  ++++++ Cv-Grid ++++++
@@ -703,7 +710,7 @@ table {
 */
 body {
   background: rgba(172, 142, 86, 0.1);
-  color: red;
+  color: #FFFFFF;
   font-family: "Poppins", Arial, Helvetica, Sans-Serif;
   line-height: 1.5;
   letter-spacing: 1.8px;
